@@ -13,9 +13,20 @@
 
 
   <body id="accueil-body">
+
+    <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
     <img src="public/svg/logo-text.svg">
 
     <nav>
+      <!-- menu de navigation -->
+      <ul>
+        <li><a href="/">Moi ?</a></li>
+        <li><a href="/Pages/projets.html">Projets</a></li>
+        <li><a href="/Pages/contact.html">Contact</a></li>
+      </ul>
+
+      <!-- bouton pour DL le CV -->
+      <button>Mon CV</button>
     </nav>
 
     <header>
@@ -23,7 +34,7 @@
     </header>
 
     <!-- PRESENTATION MOI -->
-    <div>
+    <div class="who-am-i">
       <img src="">
       <div>
         <hr>
@@ -34,8 +45,84 @@
     </div>
 
     <!-- SLIDER INFINI DE TOUS LES LANGAGES -->
-    <div>
+    <div class="infinite-horizontal">
     </div>
+
+    <!-- SCROLL HORIZONTAL -->
+    <div class="horizontal-scroll">
+      <article>
+        <h1>A PROPOS</h1>
+        <p>
+          En tant qu’Étudiant en BUT Informatique je suis passionné par le développement web.
+          J'ai pour ambition de devenir développeur web fullstack afin de concevoir les site webs de demain !
+        </p>
+      </article>
+
+      <article>
+        <h1>MON OBJECTIF</h1>
+        <p>
+          Je suis actuellement à la recherche d’une alternance dans le développement web pour acquérir de l’expérience et compléter mon panel de connaissance de développeur web.
+        </p>
+      </article>
+    </div>
+
+    <!-- SCROLL PAS HORIZONTAL POUR RESPONSIVE -->
+    <div>
+      <article>
+        <h1>A PROPOS</h1>
+        <p>
+          En tant qu’Étudiant en BUT Informatique je suis passionné par le développement web.
+          J'ai pour ambition de devenir développeur web fullstack afin de concevoir les site webs de demain !
+        </p>
+      </article>
+
+      <article>
+        <h1>MON OBJECTIF</h1>
+        <p>
+          Je suis actuellement à la recherche d’une alternance dans le développement web pour acquérir de l’expérience et compléter mon panel de connaissance de développeur web.
+        </p>
+      </article>
+    </div>
+
+    <!-- BOUTON PROJETS -->
+    <div class="projects-button">
+      <hr>
+      <button>Projets</button>
+      <hr>
+    </div>
+
+    <!-- TRANSITION FOOTER -->
+    <img src="public/svg/logo.svg">
+
+    <!-- FOOTER -->
+    <footer>
+      <article>
+        <h1>Coordonnées</h1>
+        <p>
+          Lannion (22300), France<br>
+          06 58 68 71 85<br>
+          <a>richard.terrade@etudiant.univ-rennes1.fr</a>
+        </p>
+      </article>
+
+      <article>
+        <h1>Navigation</h1>
+        <p>
+          <a>Accueil</a><br>
+          <a>Projet</a><br>
+          <a>Contact</a>
+        </p>
+      </article>
+
+      <article>
+        <h1>Réseaux</h1>
+        <p>
+          <a>GitHub</a><br>
+          <a>GitLab</a><br>
+          <a>Instagram</a>
+        </p>
+      </article>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
