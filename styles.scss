@@ -1,9 +1,34 @@
+// outils primaires
 @import "Styles/variables.scss";
+@import "Styles/fonts.scss";
 
+
+// El classico pour toutes la pages
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: "Poppins";
+
+    cursor: url("public/svg/cursor.svg"), auto;
+}
+:root::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: var(--primary-color);
+}
+a, button {
+    text-decoration: none;
+    color: inherit;
+}
+button:hover, a:hover {
+    cursor: url("public/svg/pointer.svg"), auto;
 }
 
+// éléments publiques
+@import "Styles/navbar.scss";
+
+// chaque page
 @import "Styles/accueil.scss";

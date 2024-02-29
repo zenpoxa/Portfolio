@@ -1,6 +1,30 @@
 :root {
+    --padding-horizontal : 5rem; 
+
     --primary-color : #E15C50;
-    --seconary-color: #F5EBDC;
+    --secondary-color: #F5EBDC;
     --accent-color  : #FFB858;
     --bonus-color   : #3EF70F;
+    
+    // --big-1: 144pt;
+    // --big-2: 72pt;
+    // --big-3: 64pt;
+    // --normal-1: 48pt;
+    --normal-2: 4vh;
+    // --small-1: 24pt;
+    // --small-2: 18pt;
+
+    --poppins-thin: 100;
+    --poppins-extralight: 200;
+    --poppins-light: 300;
+    --poppins-regular: 400;
+    --poppins-medium: 500;
+    --poppins-semibold: 600;      
+    --poppins-bold: 700;
+    --poppins-extrabold: 800;
+
+    --repos-effect: -5px 5px 4px rgba(0, 0, 0, .25);
+    --cliqued-effect: inset var(--repos-effect);
+
+    --classic-border: .4vh black solid;
 }
