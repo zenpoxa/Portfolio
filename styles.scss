@@ -11,24 +11,38 @@
 
     font-family: "Poppins";
 
-    cursor: url("public/svg/cursor.svg"), auto;
+    cursor: url("public/svg/cursor.svg"), auto !important;
 }
+
 :root::-webkit-scrollbar {
     display: none;
 }
+
+::selection {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+}
+
 body {
     background-color: var(--primary-color);
 }
+
 a, button {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        cursor: url("public/svg/pointer.svg"), auto !important;
+    }
 }
-button:hover, a:hover {
-    cursor: url("public/svg/pointer.svg"), auto;
+
+h1, h2, h3, p {
+    color: var(--secondary-color);
 }
 
 // éléments publiques
 @import "Styles/navbar.scss";
+@import "Styles/footer.scss";
 
 // chaque page
 @import "Styles/accueil.scss";

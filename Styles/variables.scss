@@ -6,13 +6,14 @@
     --accent-color  : #FFB858;
     --bonus-color   : #3EF70F;
     
-    // --big-1: 144pt;
+    --big-1: 20vh;
     // --big-2: 72pt;
     // --big-3: 64pt;
-    // --normal-1: 48pt;
+    --normal-1: 6.5vh;
     --normal-2: 4vh;
-    // --small-1: 24pt;
-    // --small-2: 18pt;
+    --small-1: 3vh;
+    --small-2: 2vh;
+    --text-shadow: 0 .5vh .5vh;
 
     --poppins-thin: 100;
     --poppins-extralight: 200;
@@ -23,7 +24,7 @@
     --poppins-bold: 700;
     --poppins-extrabold: 800;
 
-    --repos-effect: -5px 5px 4px rgba(0, 0, 0, .25);
+    --repos-effect: -.5vh .6vh .4vh rgba(0, 0, 0, .25);
     --cliqued-effect: inset var(--repos-effect);
 
     --classic-border: .4vh black solid;

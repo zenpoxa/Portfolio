@@ -8,6 +8,8 @@ body {
     }
 
     &>nav {
+        z-index: 3;
+
         position: fixed;
         top: 0;
         left: 0;
@@ -18,7 +20,6 @@ body {
         justify-content: center;
 
         &>ul {
-            z-index: 3;
             list-style-type: none;
             display: flex;
 
@@ -33,7 +34,7 @@ body {
 
                 box-shadow: var(--repos-effect);
 
-                transition: box-shadow .3s, transform .3s;
+                transition: transform .3s;
 
                 &>a {
                     display: inline-block;
