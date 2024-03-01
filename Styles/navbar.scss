@@ -45,13 +45,13 @@ body {
 
             &>li:nth-of-type(1) {
                 z-index: 5;
-                border-radius: 50px 0 0 50px;
+                border-radius: 5vh 0 0 5vh;
             }
             &>li:nth-of-type(2) {
                 z-index: 4;
             }
             &>li:nth-of-type(3) {
-                border-radius: 0 50px 50px 0;
+                border-radius: 0 5vh 5vh 0;
             }
 
             &>li:hover {
