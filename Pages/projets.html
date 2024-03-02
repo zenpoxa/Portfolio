@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link href="styles.scss" rel="stylesheet"> -->
+    <link href="../styles.scss" rel="stylesheet">
 
     <title> Portfolio - Projets </title>
   </head>
@@ -15,7 +15,7 @@
   <body id="projets-body">
 
     <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img src="public/svg/logo-text.svg">
+    <img id="logo-txt" src="../public/svg/logo-text.svg">
 
     <nav>
       <!-- menu de navigation -->
@@ -30,14 +30,48 @@
     </nav>
 
     <header>
-      <div class="slider-reste-a-construire-avec-swiper"></div>
+      <div class="swiper">
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div>
+              <svg fill="#FFB858" stroke="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"/></svg>
+              <img src="/public/img/img-test.jpg">
+            </div>
+            <article>
+              <h1>PROJET XXX</h1>
+              <p>lorem ipsum</p>
+            </article>
+          </div>
+          
+          <div class="swiper-slide">
+            <div>
+              <svg fill="#FFB858" stroke="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"/></svg>
+              <img src="/public/img/img-test.jpg">
+            </div>
+            <article>
+              <h1>PROJET XXX2</h1>
+              <p>lorem ipsum</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </header>
 
     <!-- TRAIT DE SEPARATION -->
     <hr>
 
     <!-- PRESENTATION DES PROJETS EN LISTE -->
-    <div>
+    <div class="liste-projets">
         <a href="/Pages/projet-tabas-kho.html">Créer un site de streaming <span>(vitrine)</span></a>
         <a>Ce même portfolio</a>
         <a>Résolveur de sudoku</a>
@@ -47,14 +81,11 @@
     </div>
 
     <!-- TRANSITION FOOTER -->
-    <div>
+    <div class="transition-footer">
         <h1>Si besoin</h1>
-        <img src="../public/svg/logo.svg">
+        <img src="../public/svg/logo-shadow.svg">
         <hr>
     </div>
-
-    <!-- logo à afficher pour le responsive -->
-    <img src="../public/svg/logo.svg">
 
     <!-- FOOTER -->
     <footer>
@@ -86,7 +117,7 @@
       </article>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/Functions/projets.js"></script>
   </body>
 
 
