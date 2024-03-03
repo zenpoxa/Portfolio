@@ -132,7 +132,7 @@
 
             box-shadow: var(--cliqued-effect);
 
-            transition: box-shadow .4s, width .7s;
+            transition: box-shadow .7s, width .7s;
 
             &>span {
                 font-size: var(--normal-2);
@@ -140,7 +140,7 @@
             }
 
             &:hover {
-                box-shadow: inset 100vw 0 var(--accent-color);
+                box-shadow: inset 100vw 0 rgba($color: #FFB858, $alpha: 1.0);
                 width: 87%;
             }
 
