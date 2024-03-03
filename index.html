@@ -15,7 +15,7 @@
   <body id="accueil-body">
 
     <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img id="logo-txt" src="public/svg/logo-text.svg">
+    <img id="logo-txt" src="/svg/logo-text.svg">
 
     <nav>
       <!-- menu de navigation -->
@@ -33,7 +33,7 @@
       <div>
         <h1>BIEN</h1>
         <div>
-          <img src="public/svg/big-logo.svg">
+          <img src="/svg/big-logo.svg">
           <h1>LE BONJOUR !</h1>
         </div>
       </div>
@@ -41,7 +41,7 @@
 
     <!-- PRESENTATION MOI -->
     <div class="who-am-i">
-      <img src="public/img/img-test.jpg">
+      <img src="/img/img-test.jpg">
       <div>
         <hr>
         <div>
@@ -54,14 +54,14 @@
 
     <!-- SLIDER INFINI DE TOUS LES LANGAGES -->
     <div class="infinite-horizontal">
-      <div class="txt">Je les aime bieng <img src="public/svg/fleche-angle-bas.svg"></div>
+      <div class="txt">Je les aime bieng <img src="/svg/fleche-angle-bas.svg"></div>
       
       <div class="wrapper">
-        <a href="https://html5.org/"><img src="public/svg/html.svg" class="cliquable"></a>
-        <a href="https://sass-lang.com/"><img src="public/svg/sass.svg" class="cliquable"></a>
-        <a href="https://devdocs.io/c/"><img src="public/svg/c.svg" class="cliquable"></a>
-        <a href="https://www.java.com/fr/"><img src="public/svg/java.svg" class="cliquable"></a>
-        <a href="https://fr.legacy.reactjs.org/"><img src="public/svg/react.svg" class="cliquable"></a>
+        <a href="https://html5.org/"><img src="/svg/html.svg" class="cliquable"></a>
+        <a href="https://sass-lang.com/"><img src="/svg/sass.svg" class="cliquable"></a>
+        <a href="https://devdocs.io/c/"><img src="/svg/c.svg" class="cliquable"></a>
+        <a href="https://www.java.com/fr/"><img src="/svg/java.svg" class="cliquable"></a>
+        <a href="https://fr.legacy.reactjs.org/"><img src="/svg/react.svg" class="cliquable"></a>
       </div>
     </div>
 
@@ -147,31 +147,6 @@
         </p>
       </article>
     </footer>
-
-        <!-- PARTIE FORMULAIRE -->
-        <div class="formulaire-mail">
-          <div>
-              <img src="../public/svg/round.svg">
-              <h1>Formulaire mail</h1>
-              <img src="../public/svg/round.svg">
-          </div>
-  
-          <form action="/backend/send_email.php" method="post">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <br>
-           
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-           
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-           
-            <input type="submit" value="Send">
-          </form>
-      </div>
 
     <script type="module" src="/Functions/smooth-scroll.js"></script>
     <script type="module" src="/Functions/accueil.js"></script>

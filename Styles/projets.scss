@@ -34,7 +34,7 @@
                         &>svg {
                             height: 70vh;
 
-                            animation: full-turn infinite linear 15s;
+                            animation: full-turn infinite linear 15s, shining infinite cubic-bezier(0,-0.15,.49,1.32) 3s;
                         }
                         
                         &>img {
@@ -192,6 +192,18 @@
     @keyframes full-turn {
         to {
             transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes shining {
+        from {
+            filter: drop-shadow(0 0 1vh rgba(yellow, 1));
+        }
+        50% {
+            filter: drop-shadow(0 0 7vh rgba(yellow, 1));
+        }
+        to {
+            filter: drop-shadow(0 0 1vh rgba(yellow, 1));
         }
     }
 }

@@ -7,6 +7,9 @@
 
     <link href="/styles.scss" rel="stylesheet">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="/Functions/contact.js"></script>
+
     <title> Portfolio - Contact </title>
   </head>
 
@@ -14,7 +17,7 @@
   <body id="contact-body">
 
     <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img id="logo-txt" src="/public/svg/logo-text.svg">
+    <img id="logo-txt" src="/svg/logo-text.svg">
 
     <nav>
         <!-- menu de navigation -->
@@ -30,27 +33,21 @@
 
     <!-- PARTIE FORMULAIRE -->
     <div class="formulaire-mail">
-        <div>
-            <img src="../public/svg/round.svg">
-            <h1>Formulaire mail</h1>
-            <img src="../public/svg/round.svg">
-        </div>
 
-        <form action="/backend/send_email.php" method="post">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required>
-          <br>
-         
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required>
-          <br>
-         
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <br>
-         
-          <input type="submit" value="Send">
-        </form>
+      <div>
+          <img src="../svg/round.svg">
+          <h1>Formulaire mail</h1>
+          <img src="../svg/round.svg">
+      </div>
+
+      <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <input type="text" id="name" name="user_name" placeholder="NOM Prénom">
+        <input type="email" id="email" name="user_email" placeholder="Votre mail">
+        <textarea name="message" placeholder="Votre gentil message d'amour :)"></textarea>
+        <input id="envoyer" type="submit" value="Evoyer  →">
+      </form>
+
     </div>
 
     <!-- TRAIT DE SEPARATION -->
@@ -59,9 +56,9 @@
     <!-- PARTIE RESEAUX -->
     <div>
         <div>
-            <img src="../public/svg/round.svg">
+            <img src="/svg/round.svg">
             <h1>Gardons contact</h1>
-            <img src="../public/svg/round.svg">
+            <img src="/svg/round.svg">
         </div>
 
         <!-- gradation des textes -->
@@ -94,7 +91,7 @@
             <p>Voici mes contacts</p>
             
             <!-- flèche vers réseaux -->
-            <img src="../public/svg/fleche-bas.svg">
+            <img src="/svg/fleche-bas.svg">
             <p>( Chut, c'est confidentiel )</p>
 
             <!-- logos cliquables -->
@@ -110,12 +107,12 @@
     <!-- TRANSITION FOOTER -->
     <div>
         <h1>Si besoin</h1>
-        <img src="../public/svg/logo.svg">
+        <img src="/svg/logo.svg">
         <hr>
     </div>
 
     <!-- logo à afficher pour le responsive -->
-    <img src="../public/svg/logo.svg">
+    <img src="/svg/logo.svg">
 
     <!-- FOOTER -->
     <footer>

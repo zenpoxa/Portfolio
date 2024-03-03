@@ -11,7 +11,7 @@
 
     font-family: "Poppins";
 
-    cursor: url("public/svg/cursor.svg"), auto !important;
+    cursor: url("/svg/cursor.svg"), auto !important;
 }
 
 :root::-webkit-scrollbar {
@@ -27,17 +27,17 @@ body {
     background-color: var(--primary-color);
 }
 
-a, button {
+a, button, input, textarea {
     text-decoration: none;
     color: inherit;
 
     &:hover {
-        cursor: url("public/svg/pointer.svg"), auto !important;
+        cursor: url("/svg/pointer.svg"), auto !important;
     }
 }
 
 .cliquable:hover {
-    cursor: url("public/svg/pointer.svg"), auto !important;
+    cursor: url("/svg/pointer.svg"), auto !important;
 }
 
 h1, h2, h3, p {
