@@ -1,6 +1,6 @@
 // outils primaires
-@import "Styles/variables.scss";
-@import "Styles/fonts.scss";
+@import "public/Styles/variables.scss";
+@import "public/Styles/fonts.scss";
 
 // El classico pour toutes la pages
 * {
@@ -44,10 +44,10 @@ h1, h2, h3, p {
 }
 
 // éléments publiques
-@import "Styles/navbar.scss";
-@import "Styles/footer.scss";
+@import "public/Styles/navbar.scss";
+@import "public/Styles/footer.scss";
 
 // chaque page
-@import "Styles/accueil.scss";
-@import "Styles/projets.scss";
-@import "Styles/contact.scss";
+@import "public/Styles/accueil.scss";
+@import "public/Styles/projets.scss";
+@import "public/Styles/contact.scss";
