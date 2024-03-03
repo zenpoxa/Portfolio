@@ -16,3 +16,5 @@ export class LenisSmoothScroll {
     requestAnimationFrame(raf)
   }
 }
+
+new LenisSmoothScroll();

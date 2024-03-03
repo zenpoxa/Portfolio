@@ -4,7 +4,6 @@
 import * as utils from "./utils.js";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import {LenisSmoothScroll} from "./smooth-scroll.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,7 +55,3 @@ const horizontal_tl = gsap.timeline({
   horizontal_tl.to(wrapper, {
     x: (-wrapper.offsetWidth + horizontalArticles[horizontalArticles.length-1].clientWidth),
   });
-
-
-// Broutilles
-new LenisSmoothScroll();

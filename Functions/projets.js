@@ -4,13 +4,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-import { LenisSmoothScroll } from "./smooth-scroll";
-
-
 /****************************
  * VARIABLES GLOBALES
  ***************************/
-let myBody = document.querySelector("#accueil-body");
 
 /****************************
  * CAROUSSEL PROJETS
@@ -34,10 +30,3 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
-
-
-
-
-
-// broutilles
-new LenisSmoothScroll();

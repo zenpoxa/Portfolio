@@ -1,0 +1,32 @@
+#contact-body {
+
+    &>div.formulaire-mail {
+        height: 110vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 20vh;
+
+        padding: 0 20vh;
+
+        &>div {
+            display: flex;
+            align-items: center;
+            gap: 3vh;
+
+            &>h1 {
+                font-size: var(--normal-1);
+                font-weight: var(--poppins-semibold);
+                text-shadow: var(--text-shadow) black;
+            }
+
+            &>img {
+                width: 6vh;
+            }
+        }
+    }
+
+}
