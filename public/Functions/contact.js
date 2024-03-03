@@ -25,7 +25,5 @@ window.onload = function() {
                 console.log('ERREUR : Mail pas envoyé...', error);
             });
         }
-
-        
     });
 }
