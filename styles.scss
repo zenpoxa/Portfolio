@@ -30,7 +30,7 @@ a, button, input, textarea {
     text-decoration: none;
     color: inherit;
 
-    &:hover {
+    &:hover, & *:hover {
         cursor: url("/svg/pointer.svg"), auto !important;
     }
 }
