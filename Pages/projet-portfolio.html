@@ -6,16 +6,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link href="styles.scss" rel="stylesheet"> -->
+    <link href="/styles.scss" rel="stylesheet">
 
-    <title> Portfolio - Tabas'KHO </title>
+    <title> Portfolio - Portfolio (projet) </title>
   </head>
 
 
-  <body id="projets-body">
+  <body id="un-projet-body">
 
     <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img src="/svg/logo-text.svg">
+    <img id="logo-txt" src="/svg/logo-text.svg">
 
     <nav>
       <!-- menu de navigation -->
@@ -27,25 +27,24 @@
     </nav>
 
     <div class="nav-bottom">
-      <div class="prev">&#x261A;</div>
+      <div class="prev">&larr;</div>
       <div class="current"></div>
-      <div class="next">&#x261B;</div>
+      <div class="next">&rarr;</div>
     </div>
 
     <header>
       <div class="nom-projet">
-        <h1>Tabas'KHO</h1>
-        <p>Qu'est-ce qu'on rigole !</p>
+        <h1>Portfolio</h1>
       </div>
 
       <div class="description-projet">
-        <h2>Késako ? <img src="/svg/logo.svg"></h2>
+        <h2>Késako ? <img src="/svg/logo-shadow.svg"></h2>
         <p>
-            Oui, ce même site sur lequel vous naviguez, il a dû être conçu.
-            Et c’est peu dire qu’il a nécessité du travail ;) 
+          Ce projet universitaire visait à créer un site web de streaming
+          en équipe de <span>4</span> pour une société immaginée.
         </p>
         <p>
-            Objectif : Vous faire <span>voyager</span> <span>(si j’y arrive)</span>.
+          Objectif : Réaliser un reccueil des besoins et se débrouiller pour en faire <span class="i">des merveilles.</span>
         </p>
       </div>
     </header>
@@ -58,16 +57,21 @@
       </div>
 
       <div class="liste-etapes">
-        <img> <!-- à mettre en float left -->
-        <p>Réaliser l'arbre des tâches</p>
-        <p>Faire la maquette</p>
-        <p>Coder & tester</p>
+        <img src="/img/img-test.jpg"> <!-- à mettre en float left -->
+        <p>Blabla 1 où l’on faisait ça parce que c’était bieng</p>
+        <p>Blabla 1 où l’on faisait ça parce que c’était bieng</p>
+        <p>Blabla 1 où l’on faisait ça parce que c’était bieng</p>
       </div>
 
       <div class="technos">
         <h1>Elles ont été utilisées ! <span>(les technos)</span></h1>
-        <div class="slider-infini">
-          <!-- reste à savoir comment faire... -->
+
+        <div class="wrapper">
+          <a href="https://html5.org/"><img src="/svg/html.svg" class="cliquable"></a>
+          <a href="https://sass-lang.com/"><img src="/svg/sass.svg" class="cliquable"></a>
+          <a href="https://devdocs.io/c/"><img src="/svg/c.svg" class="cliquable"></a>
+          <a href="https://www.java.com/fr/"><img src="/svg/java.svg" class="cliquable"></a>
+          <a href="https://fr.legacy.reactjs.org/"><img src="/svg/react.svg" class="cliquable"></a>
         </div>
       </div>
     </section>
@@ -75,7 +79,7 @@
     <!-- ACQUIS -->
     <section class="acquis">
       <div class="trait">
-        <h1>Étapes <img src="/svg/logo.svg"></h1>
+        <h1>Acquis <img src="/svg/logo.svg"></h1>
         <hr>
       </div>
 
@@ -85,16 +89,14 @@
           texte latin.
         </p>
         <p>
-          En parallèle... J’AIME LE FROMAGE !
+          En parallèle... J’AIME LE <span>FROMAGE !</span>
         </p>
       </div>
     </section>
 
     <!-- TRANSITION FOOTER -->
     <hr>
-
-    <!-- logo préliminaire au footer -->
-    <img src="/svg/logo.svg">
+    <img class="transition-footer" src="/svg/logo-shadow.svg">
 
     <!-- FOOTER -->
     <footer>
@@ -103,30 +105,31 @@
         <p>
           Lannion (22300), France<br>
           06 58 68 71 85<br>
-          <a>richard.terrade@etudiant.univ-rennes1.fr</a>
+          richard.terrade@etudiant.univ-rennes1.fr
         </p>
       </article>
 
       <article>
         <h1>Navigation</h1>
         <p>
-          <a>Accueil</a><br>
-          <a>Projet</a><br>
-          <a>Contact</a>
+          <a href="/">Accueil</a><br>
+          <a href="/Pages/projets.html">Projet</a><br>
+          <a href="/Pages/contact.html">Contact</a>
         </p>
       </article>
 
       <article>
         <h1>Réseaux</h1>
         <p>
-          <a>GitHub</a><br>
-          <a>GitLab</a><br>
-          <a>Instagram</a>
+          <a href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
+          <a href="#">GitLab</a><br>
+          <a href="https://www.instagram.com/zenpoxa/">Instagram</a>
         </p>
       </article>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/Functions/smooth-scroll.js"></script>
+    <script type="module" src="/Functions/un-projet.js"></script>
   </body>
 
 

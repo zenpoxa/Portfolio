@@ -25,7 +25,7 @@ allLogos.forEach((logo, i) => {
 });
 
 allLogos.forEach(logo => {
-    utils.moveRightInfinite(logo, -.005*myBody.clientWidth + 12.5, wrapperInf);
+    utils.moveRightInfinite(logo, -.005*myBody.clientWidth + 12.5, wrapperInf, true);
 });
 
 /****************************

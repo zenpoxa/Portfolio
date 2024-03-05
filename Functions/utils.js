@@ -20,7 +20,7 @@ function getTransitionEndEventName() {
   }
 
 // bouger un élémént selon une direction & distance
-  function moveRightInfinite(element, speed=5, contenant=NaN) {
+  function moveRightInfinite(element, speed=5, contenant=NaN, redefine=false) {
     var frameDistance = 2;
     var elStyle = window.getComputedStyle(element);
     var value = elStyle.getPropertyValue("left").replace("px", "");
@@ -31,7 +31,9 @@ function getTransitionEndEventName() {
         }
         if (Math.floor(Number(element.style.left.replace("px", ""))) >= document.body.clientWidth) {
             element.style.left=`${-element.width}px`;
-            element.style.top = `${randomIntFromInterval(0, contenant.clientHeight - element.height)}px`;
+            if (redefine) {
+                element.style.top = `${randomIntFromInterval(0, contenant.clientHeight - element.height)}px`;
+            }
             element.classList.add('active');
         }
         else {
