@@ -9,6 +9,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         contact: resolve(__dirname, 'Pages/contact.html'),
         projet: resolve(__dirname, 'Pages/projets.html'),
+        tabaskho: resolve(__dirname, 'Pages/projets-tabas-kho.html'),
+        portfolio: resolve(__dirname, '/pages/projet-portfolio.html'),
       },
     },
   },

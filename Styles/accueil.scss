@@ -1,7 +1,5 @@
 #accueil-body {
 
-    overflow-x: hidden;
-
     &>header {
         height: 120vh;
         width: 100vw;
@@ -63,7 +61,7 @@
                 width: 80%;
                 height: 0%;
                 border: 1vh solid var(--secondary-color);
-                border-radius: 10px;
+                border-radius: 10vh;
             }
 
             &>div {
@@ -88,7 +86,7 @@
     }
 
     &>div.infinite-horizontal {
-        width: 100vw;
+        width: 200vw;
         height: 50vh;
         position: relative;
 
@@ -114,17 +112,27 @@
 
         &>div.wrapper {
             height: 100%;
-            width: 100%;
-            position: relative;
+            width: 200vw;
 
-            &>a {
-                &>img {
-                    position: absolute;
-    
-                    &:hover, &.active {
-                        animation: squish .5s ease;
-                    }
-                }    
+            display: flex;
+
+            overflow-x: hidden;
+
+            animation: moveSlideShow 5s infinite linear;
+
+            &>div {
+                width: 100vw;
+                position: relative;
+
+                &>a {
+                    &>img {
+                        position: absolute;
+        
+                        &:hover {
+                            animation: squish .5s ease;
+                        }
+                    }    
+                }
             }
         }
     }
@@ -160,10 +168,6 @@
                     text-shadow: var(--text-shadow) rgba(black, .5);
                 }
             }
-        }
-
-        div.vertical-responsive {
-            display: none;
         }
 
         div.projects-button {
@@ -224,5 +228,11 @@
         40% { transform: scale(1.1, 0.9); }
         60% { transform: scale(0.9, 1.1); }
         80% { transform: scale(1.1, 0.9); }
+    }
+
+    @keyframes moveSlideShow {
+        to {
+            transform: translateX(-50%);
+        }
     }
 }

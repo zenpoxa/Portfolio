@@ -26,13 +26,25 @@ nextBtn.addEventListener("click", () => {
  * ANIMATION DEFILEMENT INF.
  ***************************/
 var wrapperInf = myBody.querySelector("div.technos>div.wrapper");
-var allLogos = wrapperInf.querySelectorAll("img");
+var allSlides = wrapperInf.querySelectorAll("div");
+var nbLogos = allSlides[0].querySelectorAll("img").length;
+let i = 0;
 
-allLogos.forEach((logo, i) => {
-    logo.style.width = `${(100/allLogos.length)*1.3}vh`;
-    logo.style.left = `${(wrapperInf.clientWidth/allLogos.length)*i}px`;
-});
+while (i < nbLogos) {
+  let logo1 = allSlides[0].querySelector(`a:nth-child(${i+1})>img`);
+  let logo2 = allSlides[1].querySelector(`a:nth-child(${i+1})>img`);
 
-allLogos.forEach(logo => {
-    utils.moveRightInfinite(logo, -.005*myBody.clientWidth + 12.5, wrapperInf, true);
-});
+  console.log(logo1, logo2);
+
+  logo1.style.width = `${(100/nbLogos)}vh`;
+  logo2.style.width = `${(100/nbLogos)}vh`;
+
+  logo1.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
+  logo2.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
+  
+  let nb = utils.randomIntFromInterval(0, wrapperInf.clientHeight - logo1.height);
+  logo1.style.top = `${nb}px`;
+  logo2.style.top = `${nb}px`;
+  
+  i++;
+}
