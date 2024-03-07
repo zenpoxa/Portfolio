@@ -14,6 +14,7 @@ export default defineConfig({
         documentation: resolve(__dirname, 'Pages/projet-documentation.html'),
         resolveur: resolve(__dirname, 'Pages/projet-resolveur.html'),
         interview: resolve(__dirname, 'Pages/projet-interview.html'),
+        bonus: resolve(__dirname, 'Pages/bonus.html'),
       },
     },
   },
