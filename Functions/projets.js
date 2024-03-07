@@ -18,7 +18,7 @@ new Swiper('.swiper', {
     spaceBetween: 500,
     speed: 750,
     autoplay: {
-        delay: 4000,
+        delay: 10000,
     },
 
     zoom: {

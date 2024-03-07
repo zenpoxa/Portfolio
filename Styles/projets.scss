@@ -43,8 +43,10 @@
                             left: 50%;
                             transform: translate(-50%, -50%);
 
-                            width: 65vh;
-                            height: 36.5625vh;
+                            width: 95%;
+                            &.square {
+                                width: 75%;
+                            }
 
                             transition: filter .2s;
 
@@ -136,7 +138,6 @@
             transition: box-shadow .7s, width .7s;
 
             &>span {
-                font-size: var(--normal-2);
                 font-style: italic;
             }
 
