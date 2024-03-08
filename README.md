@@ -1,5 +1,4 @@
 # Portfolio
-Et bieng faire mon protfolio
+Voici le site web qui présentera mes projets, et les compétences qui en émanent.
 
-# Architecture du site:
-Index / main (importe Functions) / styles (Importe Styles) / Public (svg, fonts, img...) / Pages
+Je vous souhaite une bonne visite !
