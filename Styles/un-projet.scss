@@ -113,6 +113,11 @@
                     &.i {
                         font-style: italic;
                     }
+
+                    &.bold {
+                        color: var(--secondary-color);
+                        font-weight: var(--poppins-bold);
+                    }
                 }
             }
         }
@@ -154,9 +159,9 @@
         &>div.liste-etapes {
             padding: 0 10vh;
             width: 100%;
-            margin-bottom: 15vh;
+            margin-bottom: 30vh;
 
-            &>img {
+            &>a>img {
                 float: left;
                 
                 border: 1vh var(--accent-color) solid;
@@ -164,19 +169,26 @@
                 shape-outside: circle(50%);
 
                 height: 65vh;
+                width: 65vh;
                 margin-right: 10vh;
 
                 box-shadow: var(--text-shadow) black;
+
+                transition: filter .3s;
+
+                &:hover {
+                    filter: brightness(.5);
+                }
             }
 
             &>p {
                 font-size: var(--normal-2);
-                font-weight: var(--poppins-bold);
+                font-weight: var(--poppins-semibold);
                 text-shadow: var(--text-shadow) rgba(black, .5);
             }
 
             &>p+p {
-                margin-top: calc((65vh - 4*var(--normal-2)) / 2);
+                margin-top: 8vh;
             }
         }
 
