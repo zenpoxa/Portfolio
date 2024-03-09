@@ -24,8 +24,6 @@ while (i < nbLogos) {
   let logo1 = allSlides[0].querySelector(`a:nth-child(${i+1})>img`);
   let logo2 = allSlides[1].querySelector(`a:nth-child(${i+1})>img`);
 
-  console.log(logo1, logo2);
-
   logo1.style.width = `${(100/nbLogos)}vh`;
   logo2.style.width = `${(100/nbLogos)}vh`;
 
