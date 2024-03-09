@@ -31,20 +31,20 @@ var nbLogos = allSlides[0].querySelectorAll("img").length;
 let i = 0;
 
 while (i < nbLogos) {
-  let logo1 = allSlides[0].querySelector(`a:nth-child(${i+1})>img`);
-  let logo2 = allSlides[1].querySelector(`a:nth-child(${i+1})>img`);
+  let logo1_bis = allSlides[0].querySelector(`a:nth-child(${i+1})>img`);
+  let logo2_bis = allSlides[1].querySelector(`a:nth-child(${i+1})>img`);
 
-  console.log(logo1, logo2);
+  console.log(logo1_bis, logo2_bis);
 
-  logo1.style.width = `${(100/nbLogos)*.8}vh`;
-  logo2.style.width = `${(100/nbLogos)*.8}vh`;
+  logo1_bis.style.width = `${(100/nbLogos)*.8}vh`;
+  logo2_bis.style.width = `${(100/nbLogos)*.8}vh`;
 
-  logo1.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
-  logo2.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
+  logo1_bis.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
+  logo2_bis.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
   
-  let nb = utils.randomIntFromInterval(0, wrapperInf.clientHeight - logo1.height);
-  logo1.style.top = `${nb}px`;
-  logo2.style.top = `${nb}px`;
+  let nb2 = utils.randomIntFromInterval(0, wrapperInf.clientHeight - logo1_bis.height);
+  logo1_bis.style.top = `${nb2}px`;
+  logo2_bis.style.top = `${nb2}px`;
   
   i++;
 }
