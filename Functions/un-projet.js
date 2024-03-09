@@ -36,8 +36,8 @@ while (i < nbLogos) {
 
   console.log(logo1, logo2);
 
-  logo1.style.width = `${(100/nbLogos)}vh`;
-  logo2.style.width = `${(100/nbLogos)}vh`;
+  logo1.style.width = `${(100/nbLogos)*.8}vh`;
+  logo2.style.width = `${(100/nbLogos)*.8}vh`;
 
   logo1.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
   logo2.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
