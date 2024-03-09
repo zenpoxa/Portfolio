@@ -208,13 +208,13 @@
     
     @keyframes shining {
         from {
-            filter: drop-shadow(0 0 1vh rgba(yellow, 1));
+            filter: drop-shadow(0 0 1vh rgba(yellow, .8));
         }
         50% {
-            filter: drop-shadow(0 0 7vh rgba(yellow, 1));
+            filter: drop-shadow(0 0 5vh rgba(yellow, 1));
         }
         to {
-            filter: drop-shadow(0 0 1vh rgba(yellow, 1));
+            filter: drop-shadow(0 0 1vh rgba(yellow, .8));
         }
     }
 }
