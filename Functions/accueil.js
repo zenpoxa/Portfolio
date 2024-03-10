@@ -30,7 +30,7 @@ while (i < nbLogos) {
   logo1.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
   logo2.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
   
-  let nb = utils.randomIntFromInterval(0, wrapperInf.clientHeight - logo1.clientHeight);
+  let nb = utils.randomIntFromInterval(0, wrapperInf.clientHeight - logo1.height);
   logo1.style.top = `${nb}px`;
   logo2.style.top = `${nb}px`;
   

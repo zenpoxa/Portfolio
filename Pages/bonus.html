@@ -1,302 +1,144 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <style>
-        :root {
-            --color-background: #FFFFFF;
-            --color-text: #000000;
-        }
-        
-        body {
-            width: 100vw;
-            height: auto;
-            margin: 0;
-            overflow-x: hidden;
-            
-            background: var(--color-background);
-            font-family: "Poppins", sans-serif;
-            color: var(--color-text);
-            font-size: 16px;
-        }
-        
-        body{
-            height: 70%;
-            width: 70%;
-            text-align: start;
-            padding: 5em 5em;
-            margin: 0em 10em;
-            border-radius: 35px;
-            background: #e0e0e0;
-            box-shadow:  31px 31px 62px #5a5a5a,
-            -10px -10px 62px #5a5a5a;
-        }
-        
-        h2{
-            padding-left: 5px;
-            border-left: solid #9499ff 3px;
-            border-bottom: solid #9499ff 3px;
-        }
-        
-        h3 {
-            color: #000;
-            margin-bottom: 10px;
-            text-decoration: underline;
-        }
-        
-        h4 {
-            color: #000;
-            margin-bottom: 10px;
-            text-decoration: underline;
-        }
-        
-        #avantages > div{
-            margin-left: 50px;
-        }
-        
-        td, th{
-            border: 1px solid black;
-            padding: 5px 5px;
-        }
-        
-        thead{
-            font-size: larger;
-        }
-        
-        footer > ul > li{
-            list-style-type: none;
-        }
-        
-        a:link {
-            text-decoration: none;
-        }
-        
-        a:visited {
-            text-decoration: none;
-            color: blue;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        a:active {
-            text-decoration: underline;
-        }
-        
-        #commande{
-            font-family: 'Courier New', monospace;
-            background-color: #b1b1b1;
-            color: #000;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            white-space: pre-wrap;
-            line-height: 1.4;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        article p, header p{
-            margin: 10px 20px;
-        }
-    </style>
-</head>
+<!doctype html>
+<html lang="en">
 
-<body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/styles.scss" rel="stylesheet">
+
+    <title> Portfolio - Ma passion </title>
+  </head>
+
+
+  <body id="bonus-body">
+
+    <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
+    <img id="logo-txt" src="/svg/logo-text.svg">
+
+    <nav>
+      <!-- menu de navigation -->
+      <ul>
+        <li><a href="/">Moi ?</a></li>
+        <li><a href="/Pages/projets.html">Projets</a></li>
+        <li><a href="/Pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
     <header>
-        <h1>Docker : Une révolution dans la virtualisation des applications</h1>
-        
-        <hr>
-        
-        <h2>Sommaire</h2>
-        
-        <ol>
-            <li><a href="#introduction">Introduction</a></li>
-            
-            <ol>
-                <li><a href="#what">Qu'est-ce que Docker</a></li>
-                <li><a href="#historique">Historique</a></li>
-                <li><a href="#fonctionnnement">Fonctionnnement</a></li>
-                
-                <ol>
-                    <li><a href="#avantage">Ses avantages</a></li>
-                    <li><a href="#portabilité">Portabilité</a></li>
-                    <li><a href="#eco">Écosystème Docker</a></li>
-                    <li><a href="#securite">Sécurité</a></li>
-                </ol>
-            </ol>
-            
-            <li><a href="#resume">Résumé</a></li>
-            <li><a href="#commandes">Quelques commandes</a></li>
-            <li><a href="#plus">Pour en savoir plus</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ol>
-        
-        <h2 id="introduction">Introduction</h2>
-        
+      <div class="nom-projet">
+        <h1>L'électronique</h1>
+      </div>
+
+      <div class="description-projet">
         <p>
-            Docker, une <strong>technologie de virtualisation</strong>
-            des applications, a révolutionné la manière dont
-            les développeurs déploient, gèrent et exécutent
-            des applications. Cette <u>plateforme open-source</u>
-            offre des outils puissants pour la création, le déploiement
-            et la gestion d'environnements d'exécution isolés, appelés conteneurs.
+            Et oui, parce que comprendre <span>l’informatique,</span> je pense que c’est aussi comprendre le support qui l’abrite, le <span class="i">hardware.</span>
+            <br>
+            <br>
+            C’est pourquoi je me suis mis à toucher (à mon humble niveau) à toutes les petites choses électroniques autour de moi, à les <span>démonter</span> pour essayer de savoir comment notre technologie actuelle est juste... possible.
         </p>
+      </div>
     </header>
-    
-    <main>
-        <h2 id="what">Qu'est-ce que Docker ?</h2>
-        
-        <article>
-            <h3 id="historique">Historique</h3>
+
+    <article>
+        <div class="titre">
+            <h1>Les téléphones</h1>
+            <div class="complement"></div>
+            <div class="cache"></div>
+        </div>
+
+        <div class="content">
+            <p>Tout a commencé avec le premier <span>nettoyage</span> de mon pc portable. J’avais enfin franchi la peur de <span>démonter</span> du matériel informatique, sans tout casser. </p>
+            <img src="/img/img-test.jpg" alt="">
+            <p>Alors j’ai continué cette exploration, avec les téléphones cependant.
+                Je les <span>démonte, répare, remonte</span>... bref.
+                Quelle joie d’enfin comprendre comment <span>fonctionne</span> notre objet préféré !</p>
+        </div>
+    </article>
+
+    <article>
+        <div class="titre">
+            <h1>Mon p'tit moteur</h1>
+            <div class="complement"></div>
+            <div class="cache"></div>
+        </div>
+
+        <div class="content">
             <p>
-                Docker a été initialement développé par <em>Docker</em>, Inc. en <del>2031</del> 2013 et
-                est rapidement devenu un <strong>outil essentiel</strong> pour les développeurs, les équipes
-                DevOps et les entreprises soucieuses de la portabilité et de la scalabilité de
-                leurs applications.
+                Tout bêtement, j’avais ce <span>moteur stirling</span> qui tournait bieng.
+                Une idée m’a traversé la tête : charger mon téléphone à l'aide de ce <span>moteur</span> et d'une <span>dynamo.</span>
             </p>
-        </article>
-        
-        <article>
-            <h3 id="fonctionnnement">Fonctionnement</h3>
-            
+            <img src="/img/img-test.jpg" alt="">
             <p>
-                À la base de Docker se trouve le concept de conteneurisation. Les conteneurs
-                Docker encapsulent une application et tous ses dépendances, y compris les
-                bibliothèques et les fichiers système nécessaires à son exécution. Cette
-                <em>approche légère</em> et modulaire permet aux applications d'être exécutées de
-                manière cohérente sur n'importe quel environnement compatible avec Docker.
+                Je m’y suis investi, corps et âme pendant des semaines...
+                <br>
+                <br>
+                Tout ça pour comprendre que le moteur N’ETAIT EN FAIT <span>PAS ASSEZ PUISSANT !</span>
+                <span class="small">(pas assez de couplage)</span>
             </p>
-        </article>
-        
-        <article id="avantages">
-            <h3 id="avantage">Ses avantages :</h3>
-            
-            <div>
-                <h4 id="portabilité"> - Portabilité</h4>
-                <p>
-                    Les conteneurs Docker offrent une <mark>portabilité exceptionnelle</mark>,
-                    permettant aux applications de fonctionner de manière consistante sur
-                    différents...
-                </p>
-                
-                <h4 id="eco"> - Écosystème Docker</h4>
-                
-                <ul>
-                    <li><a href="https://hub.docker.com/">Docker Compose</a></li>
-                    <li><a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a></li>
-                    <li><a href="https://hub.docker.com/">Docker Hub</a></li>
-                </ul>
-                
-                <h4 id="securite"> - Sécurité</h4>
-                
-                <ul>
-                    <li>Isolation des conteneurs</li>
-                    <li>Gestion des images</li>
-                </ul>
-            </div>
-        </article>
-        
-        <article>
-            <h2 id="resume">Résumé</h2>
-            
-            <table>
-                <thead>
-                    <th>Fonctionnalité</th>
-                    <th>Description</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Conteneurisation</td>
-                        <td>Encapsule les applications et leurs dépendances</td>
-                    </tr>
-                    <tr>
-                        <td>Portabilité</td>
-                        <td>Permet l'exécution cohérente sur différents environnements</td>
-                    </tr>
-                    <tr>
-                        <td>Isolation</td>
-                        <td>Assure une séparation efficace entre les différentes apps</td>
-                    </tr>
-                    <tr>
-                        <td>Évolutivité</td>
-                        <td>Facilite le déploiement rapide de multiples instances</td>
-                    </tr>
-                    <tr>
-                        <td>Docker Compose</td>
-                        <td>Outil pour gérer des apps multi-conteneurs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Docker Swarm</strong></td>
-                        <td><strong>Orchestration pour gérer des clusters de machines Docker</strong></td>
-                    </tr>
-                    <tr>
-                        <td>Sécurité</td>
-                        <td>Isolation des conteneurs, gestion précise des droits d'accès</td>
-                    </tr>
-                    <tr>
-                        <td>Évolution continue</td>
-                        <td>Mises à jour régulières, intégration avec d'autres outils</td>
-                    </tr>
-                    <tr>
-                        <td>Ressources multiples</td>
-                        <td>Documentation, forums et tutoriels disponibles</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-        
-        <article>
-            <div>
-                <h2 id="commandes">Quelques commandes</h2>
-                
-                <p>Récupérer une image docker : </p>
-                
-                <p id="commande"><em>&emsp;docker image pull &lt;nom_image&gt;</em></p>
-            </div>
-            <br>
-            <div>               
-                <p>Lancer un container d’une image :</p>
-                
-                <p id="commande"><em>&emsp;docker container run &lt;nom_image&gt;</em></p>
-            </div>
-            <br>
-            <div>
-                <p>Lister les conteneurs actif. Ajouter l'option -a pour voir tous les conteneurs :</p>
-                
-                <p id="commande"><em>&emsp;docker container ps</em></p>
-            </div>
-            <br>
-            <div>
-                <p>Supprimer un container :</p>
-                
-                <p id="commande"><em>&emsp;docker container rm &lt;ID_conteneur&gt;</em></p>
-            </div>
-        </article>  
-    </main>
-    
+        </div>
+    </article>
+
+    <article>
+        <div class="titre">
+            <h1>Turing complete</h1>
+            <div class="complement"></div>
+            <div class="cache"></div>
+        </div>
+
+        <div class="content">
+            <p>
+                Simplement, un ami me conseillait un jeu vidéo pour comprendre le fonctionnement d’un processeur : <span>Turing complete.</span>
+            </p>
+            <img src="/img/img-test.jpg" alt="">
+            <p>
+                Ce jeu, si ludique soit-il, m’a permis construire
+                mon propre processeur, en partant d’une simple porte logique <span>NAND.</span> Étape... par... étape...
+                <br>
+                <br>
+                C’est de la <span>folie !</span> C’était long, mais j’ai adoré :)
+            </p>
+        </div>
+    </article>
+
+    <!-- TRANSITION FOOTER -->
+    <hr>
+    <img class="transition-footer" src="/svg/logo-shadow.svg">
+
+    <!-- FOOTER -->
     <footer>
-        <h2 id="plus">Pour en savoir plus</h2>
-        
-        <ul>
-            <li><a href="https://www.docker.com/"> - Site de Docker</a></li>
-            <li><a href="https://docs.docker.com/"> - Documentation</a></li>
-            <li><a href="https://github.com/docker"> - Github de docker</a></li>
-        </ul>
-        
-        <h2 id="conclusion">Conclusion</h2>
-        
-        <p>Docker c'est :</p>
-        
-        <ul>
-            <li> 
-                <input type="checkbox" id="exampleUniq">
-                <label for="exampleUniq">coool</label>
-            </li>
-            <li>
-                <input type="checkbox" id="exampleUniqa">
-                <label for="exampleUniq">nuuul</label>
-            </li>
-        </ul>
-    </footer>   
-</body>
+      <article>
+        <h1>Coordonnées</h1>
+        <p>
+          Lannion (22300), France<br>
+          06 58 68 71 85<br>
+          richard.terrade@etudiant.univ-rennes1.fr
+        </p>
+      </article>
+
+      <article>
+        <h1>Navigation</h1>
+        <p>
+          <a href="/">Accueil</a><br>
+          <a href="/Pages/projets.html">Projets</a><br>
+          <a href="/Pages/contact.html">Contact</a>
+        </p>
+      </article>
+
+      <article>
+        <h1>Réseaux</h1>
+        <p>
+          <a href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
+          <a href="#">GitLab</a><br>
+          <a href="https://www.instagram.com/zenpoxa/">Instagram</a>
+        </p>
+      </article>
+    </footer>
+
+    <script type="module" src="/Functions/smooth-scroll.js"></script>
+    <script type="module" src="/Functions/un-projet.js"></script>
+  </body>
+
+
 </html>
