@@ -5,10 +5,6 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 /****************************
- * VARIABLES GLOBALES
- ***************************/
-
-/****************************
  * CAROUSSEL PROJETS
  ***************************/
 new Swiper('.swiper', {
