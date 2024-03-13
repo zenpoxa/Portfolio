@@ -34,7 +34,7 @@
             width: 100%;
             gap: 5vh;
 
-            &>input, &>textarea {
+            &>input, &>textarea, &>div>input {
                 border-radius: 2vh;
                 border: .75vh var(--accent-color) solid;
                 
@@ -66,27 +66,54 @@
                 font-size: var(--small-1);
             }
 
-            &>#envoyer {
-                background-color: var(--accent-color);
-                border: none;
+            &>div {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
 
-                box-shadow: var(--repos-effect);
+                margin-top: 8vh;
+                margin-bottom: 8vh;
 
-                margin-top: 5vh;
-                padding: 4vh 6vh;
+                &>p {
+                    flex-grow: 1;
 
-                font-weight: var(--poppins-bold);
-                font-style: italic;
+                    text-align: center;
+                    font-size: var(--normal-1);
+                    font-style: italic;
+                    font-weight: var(--poppins-bold);
 
-                min-width: 15%;
+                    &.success {
+                        color: var(--accent-color);
+                    }
+                    &.error {
+                        color: #d62300;
+                    }
+                }
 
-                align-self: flex-end;
-                
-                transition: transform .3s;
+                &>#envoyer {
+                    background-color: var(--accent-color);
+                    border: none;
 
-                &:hover {
-                    transform: translate(-1px, 1px);
-                    box-shadow: none;
+                    flex-grow: 0;
+    
+                    box-shadow: var(--repos-effect);
+    
+                    padding: 4vh 6vh;
+    
+                    font-weight: var(--poppins-bold);
+                    font-style: italic;
+    
+                    min-width: 15%;
+    
+                    align-self: flex-end;
+                    
+                    transition: transform .3s;
+    
+                    &:hover {
+                        transform: translate(-1px, 1px);
+                        box-shadow: none;
+                    }
                 }
             }
         }
