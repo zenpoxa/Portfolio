@@ -65,20 +65,32 @@
 
         <!-- gradation des textes -->
         <div class="gradation">
-            <p>
+            <p class="typing">
                 Je vais vous dire une chose :<br>
                 Je vous aime bien.
             </p>
-            <p>
+            <p class="fading">
                 Alors nous pourrions créer un contact :)
             </p>
-            <p>
-                Discuter, échanger.
-            </p>
-            <p>
+            <div class="morphing">
+              <span id="text1"></span>
+              <span id="text2"></span>
+              
+              <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                                                                0 1 0 0 0
+                                                                                0 0 1 0 0
+                                                                                0 0 0 255 -140" />
+                    </filter>
+                </defs>
+              </svg>
+            </div>
+            <p class="fading">
                 Faire connaissance.
             </p>
-            <p>
+            <p class="typing">
                 Être de bons<br>
                 collaborateurs.
             </p>

@@ -17,6 +17,27 @@ function getTransitionEndEventName() {
             return transitions[transition];
         } 
     }
-  }
+  };
 
-export {randomIntFromInterval, getTransitionEndEventName};
+// Appliquer un effect d'écriture de texte à un élément
+function typeEffect(element, speed) {
+    let text = element.innerHTML;
+    element.innerHTML = "";
+
+    let i = 0;
+    var timer = setInterval(function() {
+        if (i < text.length) {
+            if (text.charAt(i) == '<') {
+                i += 4;
+                element.appendChild(document.createElement("br"));
+            }
+            element.append(text.charAt(i));
+            i++;
+        } else {
+            clearInterval(timer);
+        }
+    }, speed);
+}
+
+
+export {typeEffect, randomIntFromInterval, getTransitionEndEventName};
