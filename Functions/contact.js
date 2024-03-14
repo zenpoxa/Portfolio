@@ -9,7 +9,10 @@ window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
         resultText.innerHTML = "";
-        resultText.className = "";
+
+        resultText = document.getElementById("result");
+        var newone = resultText.cloneNode(true);
+        resultText.parentNode.replaceChild(newone, resultText);
 
         // vérifier si les champs sont bien remplis
         if (
@@ -18,18 +21,15 @@ window.onload = function() {
             !this.querySelector("textarea").value
         )
         {
-            resultText.classList.add("error");
-            resultText.innerHTML = "Champs mal remplis";
+            newone.innerHTML = "Champs mal remplis";
         }
 
         else {
             emailjs.sendForm('service_a49mbi8', 'template_vd90ozf', this)
             .then(function() {
-                resultText.classList.add("success")
-                resultText.innerHTML = "Envoyé !";
-            }, function(error) {
-                resultText.classList.add("error")
-                resultText.innerHTML = "Erreur serveur...";
+                newone.innerHTML = "Envoyé !";
+            }, function() {
+                newone.innerHTML = "Erreur serveur...";
             });
         }
     });

@@ -217,8 +217,8 @@
 
         padding: 10vh 0;
 
-        &>svg {
-            filter: drop-shadow(var(--text-shadow) rgb(0 0 0 / 0.5));
+        &>img {
+            width: 7vh;
         }
     }
 
