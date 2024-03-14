@@ -137,7 +137,7 @@ document.querySelectorAll("div.gradation p:not(.final), div.morphing").forEach(t
 });
 
 // écriture du texte en live
-let speed = 25;
+var speed = 35;
 document.querySelectorAll("div.gradation p.typing").forEach(texte => {
     gsap.to(texte,
         {
@@ -156,8 +156,8 @@ document.querySelectorAll("div.gradation p.fading").forEach(texte => {
     gsap.fromTo(
         texte,
         {
-            y: 100,
-            autoAlpha: 0,
+            y: 20,
+            opacity: 0,
         },
 
         {
@@ -166,93 +166,45 @@ document.querySelectorAll("div.gradation p.fading").forEach(texte => {
                 start: "top center",
             },
             
-            duration: 1.25,
             y: 0,
-            autoAlpha: 1,
-            ease: "power2.out",
-            overwrite: "auto"
+            duration: 1.25,
+            opacity: 1,
         },
     );
 });
 
-// morphing de texte
-const elts = {
-    text1: document.getElementById("text1"),
-    text2: document.getElementById("text2")
-};
+// sliding
+document.querySelectorAll("div.gradation p.sliding").forEach(texte => {
+    gsap.from(texte,
+        {
+            scrollTrigger: {
+                trigger: texte,
+                start: "top center",
+            },
+            
+            xPercent: -100,
+            duration: 1.25,
+            opacity: 1,
+        },
+    );
+});
 
-const texts = [
-    "Discuter",
-    "Échanger",
-    "Se comprendre",
-];
-
-const morphTime = 1;
-const cooldownTime = 0.5;
-
-let textIndex = texts.length - 1;
-let time = new Date();
-let morph = 0;
-let cooldown = cooldownTime;
-
-elts.text1.textContent = texts[textIndex % texts.length];
-elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-
-function doMorph() {
-    morph -= cooldown;
-    cooldown = 0;
-
-    let fraction = morph / morphTime;
-
-    if (fraction > 1) {
-        cooldown = cooldownTime;
-        fraction = 1;
-    }
-
-    setMorph(fraction);
-}
-
-function setMorph(fraction) {
-    elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-    elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-
-    fraction = 1 - fraction;
-    elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-    elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-
-    elts.text1.textContent = texts[textIndex % texts.length];
-    elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-}
-
-function doCooldown() {
-    morph = 0;
-
-    elts.text2.style.filter = "";
-    elts.text2.style.opacity = "100%";
-
-    elts.text1.style.filter = "";
-    elts.text1.style.opacity = "0%";
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-
-    let newTime = new Date();
-    let shouldIncrementIndex = cooldown > 0;
-    let dt = (newTime - time) / 1000;
-    time = newTime;
-
-    cooldown -= dt;
-
-    if (cooldown <= 0) {
-        if (shouldIncrementIndex) {
-            textIndex++;
-        }
-
-        doMorph();
-    } else {
-        doCooldown();
-    }
-}
-
-animate();
+/*************************************
+ * ANNIMATIONS RESEAUX
+ ************************************/
+document.querySelectorAll("div.reseaux>p:first-child").forEach(texte => {
+    gsap.fromTo(texte,
+        {
+            visibility: 'hidden',
+        },
+        {
+            scrollTrigger: {
+                trigger: texte,
+                start: "center center",
+            },
+            onStart: () => {
+                utils.typeEffect(texte, speed);
+            },
+            visibility: 'visible',
+        });
+});
