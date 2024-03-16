@@ -3,7 +3,8 @@
  ***************************/
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/all";
-import CustomEase from "gsap/CustomEase";
+import {CustomEase} from "gsap/CustomEase";
+
 import * as utils from "./utils.js";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -71,8 +72,6 @@ document.querySelectorAll("h1.second").forEach(leBonjour => {
             scale: 1,
         },"-=75%")
 });
-
-
 
 /********************************
  * ANIMATION D'AGGRANDISSEMENT D'UN TEXTE
@@ -156,7 +155,7 @@ document.querySelectorAll("div.gradation p.fading").forEach(texte => {
     gsap.fromTo(
         texte,
         {
-            y: 20,
+            y: 100,
             opacity: 0,
         },
 
@@ -208,3 +207,11 @@ document.querySelectorAll("div.reseaux>p:first-child").forEach(texte => {
             visibility: 'visible',
         });
 });
+
+/*************************************
+ * ANIMATION DE SURVOL TITRE PORTFOLIO
+ ************************************/
+var test = gsap.utils.toArray(document.querySelector(".portfolio"));
+console.log(test)
+test.onmouseover = function() {
+}
