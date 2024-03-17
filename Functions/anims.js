@@ -207,11 +207,3 @@ document.querySelectorAll("div.reseaux>p:first-child").forEach(texte => {
             visibility: 'visible',
         });
 });
-
-/*************************************
- * ANIMATION DE SURVOL TITRE PORTFOLIO
- ************************************/
-var test = gsap.utils.toArray(document.querySelector(".portfolio"));
-console.log(test)
-test.onmouseover = function() {
-}
