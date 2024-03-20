@@ -207,3 +207,17 @@ document.querySelectorAll("div.reseaux>p:first-child").forEach(texte => {
             visibility: 'visible',
         });
 });
+
+/*************************************
+ * REVLELATION DES TITRES PAGE BONUS
+ ************************************/
+document.querySelectorAll("div.titre>div.cache").forEach(texte => {
+    gsap.to(texte,
+        {
+            scrollTrigger: {
+                trigger: texte,
+                start: "top center",
+            },
+            width: "0%",
+        });
+});

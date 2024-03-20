@@ -7,7 +7,7 @@
         align-items: center;
         gap: 10vh;
 
-        padding: 15vh;
+        padding: 15vh 7.5vw;
         padding-top: 20vh;
         margin-bottom: 30vh;
 
@@ -20,7 +20,7 @@
                 font-weight: var(--poppins-bold);
                 color: var(--bonus-color);
                 text-align: center;
-                -webkit-text-stroke: .5vh black;
+                -webkit-text-stroke: .25vw black;
 
                 text-shadow: 1vh 1vh 0 var(--bonus-color),
                 2vh 2vh 0 var(--color-tertiary), 3vh 3vh var(--color-quaternary),
@@ -119,10 +119,10 @@
     }
 
     &>article {
-        padding: 0 15vh;
-        margin-bottom: 30vh;
+        padding: 0 7.5vw;
+        margin-bottom: 20vw;
 
-        height: 80vh;
+        height: 100vh;
 
         display: flex;
         flex-direction: column;
@@ -136,33 +136,31 @@
                 font-size: var(--normal-1);
                 text-shadow: var(--text-shadow) black;
 
-                padding: 3vh;
-                border: 1vh var(--secondary-color) solid;
+                padding: 3vh 1.5vw;
+                border: .5vw var(--secondary-color) solid;
                 border-left: none;
                 border-bottom: none;
-                border-radius: 0 1vh;
+                border-radius: 0 .5vw;
             }
 
             &>div.complement {
                 flex-grow: 2;
                 align-self: stretch;
 
-                border-bottom: 1vh var(--secondary-color) solid;
+                border-bottom: .5vw var(--secondary-color) solid;
             }
 
             &>div.cache {
                 position: absolute;
                 top: 0;
                 left: 0;
-                
+
                 height: 100%;
                 width: 100%;
 
-                transition: .5s ease-out;
+                background-color: var(--primary-color);
 
-                &:hover {
-                    width: 0;
-                }
+                transition: width .2s ease-out;
             }
         }
 
@@ -198,8 +196,8 @@
                     width: 100%;
                     height: 100%;
 
-                    border: .5vh black solid;
-                    border-radius: 5vh;
+                    border: .25vw black solid;
+                    border-radius: 2.5vw;
                 }
             }
         }
@@ -210,12 +208,12 @@
         width: 80vw;
         transform: translateX(10vw);
 
-        border: .2vh var(--secondary-color) solid;
-        border-radius: 1vh;
+        border: .1vw var(--secondary-color) solid;
+        border-radius: .5vw;
     }
 
     &>img.transition-footer {
-        width: 8vh;
+        width: 4vw;
         transform: translateX(46vw);
 
         margin: 10vh 0;
