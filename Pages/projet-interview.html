@@ -27,9 +27,9 @@
     </nav>
 
     <div class="nav-bottom">
-      <div class="prev" title="projet précédent">&larr;</div>
+      <div class="prev cliquable" title="projet précédent">&larr;</div>
       <div class="current"></div>
-      <div class="next" title="projet suivant">&rarr;</div>
+      <div class="next cliquable" title="projet suivant">&rarr;</div>
     </div>
 
     <header>
@@ -58,7 +58,25 @@
       </div>
 
       <div class="liste-etapes">
-        <a href="https://docs.google.com/document/d/1IU1xB3gGUA_dxXIAtq28dVi3F57Ghlaelnm_5BTbsrM/edit?usp=sharing" target="_blank"><img title="Voir le compte-rendu" src="/img/interview-slide.gif"></a>
+
+        <a title="Voir le compte-rendu" href="https://docs.google.com/document/d/1IU1xB3gGUA_dxXIAtq28dVi3F57Ghlaelnm_5BTbsrM/edit?usp=sharing" target="_blank">
+          <div class="swiper">
+
+            <!-- wrapper avec toutes les slies -->
+            <div class="swiper-wrapper">
+
+              <!-- Une slide, une image -->
+              <div class="swiper-slide">
+                <img src="/img/interview-1.png">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/interview-2.jpg">
+              </div>
+
+            </div>
+          </div>
+        </a>
+
         <p>1. Trouver une entreprise, en tenant un tableau de bord</p>
         <p>2. Réaliser l'intervew</p>
         <p>3. Rédiger un compte-rendu</p>

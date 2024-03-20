@@ -27,9 +27,9 @@
     </nav>
 
     <div class="nav-bottom">
-      <div class="prev" title="projet précédent">&larr;</div>
+      <div class="prev cliquable" title="projet précédent">&larr;</div>
       <div class="current"></div>
-      <div class="next" title="projet suivant">&rarr;</div>
+      <div class="next cliquable" title="projet suivant">&rarr;</div>
     </div>
 
     <header>
@@ -63,7 +63,28 @@
       </div>
 
       <div class="liste-etapes">
-        <a href="https://tabas-kho.vercel.app/" target="_blank"><img title="Visiter le site web" src="/img/tabaskho-slide.gif"></a>
+
+        <a title="Voir le site" href="https://tabas-kho.vercel.app/" target="_blank">
+          <div class="swiper">
+
+            <!-- wrapper avec toutes les slies -->
+            <div class="swiper-wrapper">
+
+              <!-- Une slide, une image -->
+              <div class="swiper-slide">
+                <img src="/img/tabas-kho-1.png">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/tabas-kho-2.png">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/tabas-kho-3.png">
+              </div>
+
+            </div>
+          </div>
+        </a>
+
         <p>1. Recueil des besoins, listage des fonctionnalités</p>
         <p>2. Réalisation de la charte graphique et de la maquette</p>
         <p>3. Codage du site</p>

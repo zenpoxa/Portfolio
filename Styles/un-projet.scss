@@ -82,7 +82,7 @@
 
                     transform: translate(-150%, -50%);
 
-                    opacity: .5;
+                    opacity: .4;
                 }
 
                 &>h1 {
@@ -235,7 +235,7 @@
             width: 100%;
             margin-bottom: 30vh;
 
-            &>a>img {
+            &>a>div.swiper {
                 float: left;
                 
                 border: .5vw var(--accent-color) solid;
@@ -248,10 +248,25 @@
 
                 box-shadow: var(--text-shadow) black;
 
-                transition: filter .3s;
+                &>div.swiper-wrapper {
 
-                &:hover {
-                    filter: brightness(.5);
+                    &>div.swiper-slide {
+                        background-color: var(--accent-color);
+
+                        &>img {
+                            width: 100%;
+                            height: 100%;
+
+                            border-radius: 50%;
+                            shape-outside: circle(50%);
+    
+                            transition: filter .2s, box-shadow .2s;
+    
+                            &:hover {
+                                filter: brightness(.5);
+                            }
+                        }
+                    }
                 }
             }
 

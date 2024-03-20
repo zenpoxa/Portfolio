@@ -3,11 +3,27 @@
  ***************************/
 import * as utils from "./utils.js";
 import * as switchPage from "./switch-projet.js";
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 /****************************
  * VARIABLES GLOABLES
  ***************************/
 var myBody = document.querySelector("#un-projet-body");
+
+/****************************
+ * SLIDER IMAGES
+ ***************************/
+new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  speed: 1000,
+
+  autoplay: {
+      delay: 4000,
+  },
+});
 
 /****************************
  * NAVIGATION ENTRE PROJETS

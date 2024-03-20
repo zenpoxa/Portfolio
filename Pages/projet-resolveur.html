@@ -27,9 +27,9 @@
     </nav>
 
     <div class="nav-bottom">
-      <div class="prev" title="projet précédent">&larr;</div>
+      <div class="prev cliquable" title="projet précédent">&larr;</div>
       <div class="current"></div>
-      <div class="next" title="projet suivant">&rarr;</div>
+      <div class="next cliquable" title="projet suivant">&rarr;</div>
     </div>
 
     <header>
@@ -58,7 +58,28 @@
       </div>
 
       <div class="liste-etapes">
-        <a href="https://github.com/zenpoxa/backtracking-sudoku" target="_blank"><img title="Voir le code source" src="/img/resolveur-slide.gif"></a>
+        
+        <a title="Voir le code source" href="https://github.com/zenpoxa/backtracking-sudoku" target="_blank">
+          <div class="swiper">
+
+            <!-- wrapper avec toutes les slies -->
+            <div class="swiper-wrapper">
+
+              <!-- Une slide, une image -->
+              <div class="swiper-slide">
+                <img src="/img/resolveur-1.png">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/resolveur-2.png">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/resolveur-3.png">
+              </div>
+
+            </div>
+          </div>
+        </a>
+
         <p>1. Concevoir l'algorithme de parcours en profondeur & rédiger un cahier de test</p>
         <p>2. Coder cet algorithme</p>
         <p>3. Optimiser le coût temporel à l'aide de techniques (singletons, X-wing...)</p>
