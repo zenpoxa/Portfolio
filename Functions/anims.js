@@ -129,7 +129,7 @@ document.querySelectorAll("div.gradation p:not(.final), div.morphing").forEach(t
         {
             scrollTrigger: {
                 trigger: texte,
-                start: "top center",
+                start: "center bottom",
             },
             visibility: "visible",
         });
@@ -142,7 +142,7 @@ document.querySelectorAll("div.gradation p.typing").forEach(texte => {
         {
             scrollTrigger: {
                 trigger: texte,
-                start: "top center",
+                start: "center bottom",
             },
             onStart: () => {
                 utils.typeEffect(texte, speed);
@@ -162,7 +162,7 @@ document.querySelectorAll("div.gradation p.fading").forEach(texte => {
         {
             scrollTrigger: {
                 trigger: texte,
-                start: "top center",
+                start: "center bottom",
             },
             
             y: 0,
@@ -178,7 +178,7 @@ document.querySelectorAll("div.gradation p.sliding").forEach(texte => {
         {
             scrollTrigger: {
                 trigger: texte,
-                start: "top center",
+                start: "center bottom",
             },
             
             xPercent: -100,

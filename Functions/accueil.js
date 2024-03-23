@@ -24,13 +24,14 @@ while (i < nbLogos) {
   let logo1 = allSlides[0].querySelector(`a:nth-child(${i+1})>img`);
   let logo2 = allSlides[1].querySelector(`a:nth-child(${i+1})>img`);
 
-  logo1.style.width = `${(100/nbLogos)}vh`;
-  logo2.style.width = `${(100/nbLogos)}vh`;
+  logo1.style.width = `${(100/nbLogos)*.6}vw`;
+  logo2.style.width = `${(100/nbLogos)*.6}vw`;
+  let h = logo1.clientHeight;
 
   logo1.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
   logo2.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
   
-  let nb = utils.randomIntFromInterval(0, wrapperInf.clientHeight - logo1.height);
+  let nb = utils.randomIntFromInterval(0, wrapperInf.clientHeight - h);
   logo1.style.top = `${nb}px`;
   logo2.style.top = `${nb}px`;
   
