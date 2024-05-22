@@ -47,16 +47,17 @@ const horizontal_tl = gsap.timeline({
       pin: true,
       scrub: 1,
       start: "bottom bottom",
-      end: "+=" + (wrapper.clientHeight),
+      end: "+=" + (Ambitions.clientHeight),
       snap: {
-        snapTo: 1 / (horizontalArticles.length - 1),
+        snapTo: 1 / (horizontalArticles.length-1),
         duration: { min: 0.2, max: 0.4},
         delay: 0.2,
-        ease: "power2.inOut",
+        ease: "power2.out"
       },
     },
   });
 
   horizontal_tl.to(wrapper, {
-    x: (-wrapper.offsetWidth + horizontalArticles[horizontalArticles.length-1].clientWidth),
+    xPercent: -100 * ((horizontalArticles.length - 1) / horizontalArticles.length),
+    ease: "none",
   });
