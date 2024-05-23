@@ -199,7 +199,7 @@
         @keyframes lighten {
             to {
                 color: var(--accent-color);
-                -webkit-text-stroke: .05vh black;
+                text-shadow: var(--text-shadow) rgba(black, .25);            
             }
         }
 
