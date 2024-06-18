@@ -183,6 +183,15 @@
                 &>p {
                     font-size: var(--normal-2);
                     text-shadow: var(--text-shadow) rgba(black, .5);
+
+                    &>a {
+                        color: var(--accent-color);
+                        transition: font-weight .1s ease-in;
+
+                        &:hover {
+                            font-weight: var(--poppins-semibold);
+                        }
+                    }
                 }
             }
         }
