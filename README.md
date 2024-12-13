@@ -1,4 +1,4 @@
 # Portfolio
-Voici le site web qui présentera mes projets, et les compétences qui en émanent.
+Voici le site web qui présentera mes projets, mes ambitions...
 
-Je vous souhaite une bonne visite !
+... et peut-être mes élans artistiques ?
