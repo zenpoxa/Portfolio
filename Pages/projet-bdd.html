@@ -1,153 +1,158 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="/styles.scss" rel="stylesheet">
+  <link href="/styles.scss" rel="stylesheet">
 
-    <title> Portfolio - Base de données </title>
-  </head>
+  <title> Portfolio - Base de données </title>
+</head>
 
 
-  <body id="un-projet-body">
+<body id="un-projet-body">
 
-    <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img id="logo-txt" src="/svg/logo-text.svg">
+  <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
+  <img id="logo-txt" src="/svg/logo-text.svg">
 
-    <nav>
-      <!-- menu de navigation -->
-      <ul>
-        <li><a href="/">Moi ?</a></li>
-        <li><a href="/Pages/projets.html">Projets</a></li>
-        <li><a href="/Pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <!-- menu de navigation -->
+    <ul>
+      <li><a href="/">Moi ?</a></li>
+      <li><a href="/Pages/projets.html">Projets</a></li>
+      <li><a href="/Pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="nav-bottom">
-      <div class="prev cliquable" title="projet précédent">&larr;</div>
-      <div class="current"></div>
-      <div class="next cliquable" title="projet suivant">&rarr;</div>
+  <div class="nav-bottom">
+    <div class="prev cliquable" title="projet précédent">&larr;</div>
+    <div class="current"></div>
+    <div class="next cliquable" title="projet suivant">&rarr;</div>
+  </div>
+
+  <header>
+    <div class="nom-projet">
+      <h1 class="deep-text title-boom">Manipulation de données</h1>
     </div>
 
-    <header>
-      <div class="nom-projet">
-        <h1 class="deep-text title-boom">Manipulation de données</h1>
-      </div>
+    <div class="competence">
+      <h1><span>Gérer</span> des données de l'information</h1>
+    </div>
 
-      <div class="competence">
-        <h1><span>Gérer</span> des données de l'information</h1>
-      </div>
+    <div class="description-projet">
+      <h2>Késako ? <img class="roll-each" src="/svg/logo-shadow.svg"></h2>
+      <p>
+        En duo, nous avons <span>conçu, codé, peuplé puis analysé</span> une base de données relative à des
+        établissements scolaires,
+        afin de réaliser des <span>statistiques</span> fondamentales, en mesurant les niveaux de corrélation.
+      </p>
+      <p>
+        <span class="bold">Objectif :</span> Comprendre le poids des grands jeux de données, et prendre le temps
+        d'<span>analyser.</span>
+      </p>
+    </div>
+  </header>
 
-      <div class="description-projet">
-        <h2>Késako ? <img class="roll-each" src="/svg/logo-shadow.svg"></h2>
-        <p>
-            En duo, nous avons <span>conçu, codé, peuplé puis analysé</span> une base de données relative à des établissements scolaires,
-            afin de réaliser des <span>statistiques</span> fondamentales, en mesurant les niveaux de corrélation.
-        </p>
-        <p>
-          <span class="bold">Objectif :</span> Comprendre le poids des grands jeux de données, et prendre le temps d'<span>analyser.</span>
-        </p>
-      </div>
-    </header>
+  <!-- PRESENTATION DES ETAPES -->
+  <section class="etapes" style="margin-bottom: 80vh;">
+    <div class="trait">
+      <hr>
+      <h1>Étapes <img class="roll-each" src="/svg/logo.svg"></h1>
+    </div>
 
-    <!-- PRESENTATION DES ETAPES -->
-    <section class="etapes" style="margin-bottom: 80vh;">
-      <div class="trait">
-        <hr>
-        <h1>Étapes <img class="roll-each" src="/svg/logo.svg"></h1>
-      </div>
+    <div class="liste-etapes">
 
-      <div class="liste-etapes">
+      <a title="Voir le compte-rendu"
+        href="https://drive.google.com/drive/folders/1_sd4seVY7l3RNKGhmGPQwbFiD1IdApmZ?usp=drive_link" target="_blank">
+        <div class="swiper">
 
-        <a title="Voir le compte-rendu" href="https://drive.google.com/drive/folders/1_sd4seVY7l3RNKGhmGPQwbFiD1IdApmZ?usp=drive_link" target="_blank">
-          <div class="swiper">
+          <!-- wrapper avec toutes les slies -->
+          <div class="swiper-wrapper">
 
-            <!-- wrapper avec toutes les slies -->
-            <div class="swiper-wrapper">
-
-              <!-- Une slide, une image -->
-                <div class="swiper-slide">
-                    <img src="/img/bdd-diagramme.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/img/bdd-csv.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="/img/bdd-rapport.png">
-                </div>
-
+            <!-- Une slide, une image -->
+            <div class="swiper-slide">
+              <img src="/img/bdd-diagramme.png">
             </div>
+            <div class="swiper-slide">
+              <img src="/img/bdd-csv.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/bdd-rapport.png">
+            </div>
+
           </div>
-        </a>
+        </div>
+      </a>
 
-        <p>1. Concevoir la base de données</p>
-        <p>2. Créer et peupler la base</p>
-        <p>3. Extraire une portion de données</p>
-        <p>4. Faire des analyses statistiques en python</p>
-        <p>5. Rédiger un rapport en LaTeX</p>
-      </div>
-    </section>
+      <p>1. Concevoir la base de données</p>
+      <p>2. Créer et peupler la base</p>
+      <p>3. Extraire une portion de données</p>
+      <p>4. Faire des analyses statistiques en python</p>
+      <p>5. Rédiger un rapport en LaTeX</p>
+    </div>
+  </section>
 
-    <!-- ACQUIS -->
-    <section class="acquis">
-      <div class="trait">
-        <h1>Acquis <img class="roll-each" src="/svg/logo.svg"></h1>
-        <hr>
-      </div>
+  <!-- ACQUIS -->
+  <section class="acquis">
+    <div class="trait">
+      <h1>Acquis <img class="roll-each" src="/svg/logo.svg"></h1>
+      <hr>
+    </div>
 
-      <div class="liste-acquis">
-        <p>
-            J'ai affiné ma compétence de <span>conception</span>, car c'est la fondation même d'une base de données.
-        </p>
-        <p>
-            Nous avons évidemment utlisé plusieurs notions mathématiques pour mener à bien les analyses statistiques : <span>covariance, corrélation, régression linéaire multiple.</span>
-        </p>
-        <p>
-            Bien évidemment, mon niveau en <span>SQL</span>, en <span>python</span> et en <span>LaTeX</span> n'a pu qu'être amélioré.
-        </p>
-      </div>
-    </section>
+    <div class="liste-acquis">
+      <p>
+        J'ai affiné ma compétence de <span>conception</span>, car c'est la fondation même d'une base de données.
+      </p>
+      <p>
+        Nous avons évidemment utlisé plusieurs notions mathématiques pour mener à bien les analyses statistiques :
+        <span>covariance, corrélation, régression linéaire multiple.</span>
+      </p>
+      <p>
+        Bien évidemment, mon niveau en <span>SQL</span>, en <span>python</span> et en <span>LaTeX</span> n'a pu qu'être
+        amélioré.
+      </p>
+    </div>
+  </section>
 
-    <!-- TRANSITION FOOTER -->
-    <hr class="line-spawn">
-    <img class="transition-footer" src="/svg/logo-shadow.svg">
+  <!-- TRANSITION FOOTER -->
+  <hr class="line-spawn">
+  <img class="transition-footer" src="/svg/logo-shadow.svg">
 
-    <!-- FOOTER -->
-    <footer>
-      <article>
-        <h1>Coordonnées</h1>
-        <p>
-          35131 Chartres-de-Bretagne, France<br>
-          06 58 68 71 85<br>
-          richard.terrade.pro@gmail.com
-        </p>
-      </article>
+  <!-- FOOTER -->
+  <footer>
+    <article>
+      <h1>Coordonnées</h1>
+      <p>
+        22300, Lannion, France<br>
+        06 58 68 71 85<br>
+        richard.terrade.pro@gmail.com
+      </p>
+    </article>
 
-      <article>
-        <h1>Navigation</h1>
-        <p>
-          <a href="/">Accueil</a><br>
-          <a href="/Pages/projets.html">Projets</a><br>
-          <a href="/Pages/contact.html">Contact</a>
-        </p>
-      </article>
+    <article>
+      <h1>Navigation</h1>
+      <p>
+        <a href="/">Accueil</a><br>
+        <a href="/Pages/projets.html">Projets</a><br>
+        <a href="/Pages/contact.html">Contact</a>
+      </p>
+    </article>
 
-      <article>
-        <h1>Réseaux</h1>
-        <p>
-          <a href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
-          <a href="https://www.linkedin.com/in/richard-terrade-400bb9302/">LinkedIn</a><br>
-        </p>
-      </article>
-    </footer>
+    <article>
+      <h1>Réseaux</h1>
+      <p>
+        <a href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/richard-terrade-400bb9302/">LinkedIn</a><br>
+      </p>
+    </article>
+  </footer>
 
-    <script type="module" src="/Functions/smooth-scroll.js"></script>
-    <script type="module" src="/Functions/un-projet.js"></script>
-    <script type="module" src="/Functions/anims.js"></script>
-  </body>
+  <script type="module" src="/Functions/smooth-scroll.js"></script>
+  <script type="module" src="/Functions/un-projet.js"></script>
+  <script type="module" src="/Functions/anims.js"></script>
+</body>
 
 
 </html>

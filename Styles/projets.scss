@@ -33,9 +33,9 @@
                         &>svg {
                             height: 70vh;
 
-                            animation: full-turn infinite linear 15s, shining infinite cubic-bezier(0,-0.15,.49,1.32) 3s;
+                            animation: full-turn infinite linear 15s, shining infinite cubic-bezier(0, -0.15, .49, 1.32) 3s;
                         }
-                        
+
                         &>a {
                             position: absolute;
                             top: 50%;
@@ -43,6 +43,7 @@
                             transform: translate(-50%, -50%);
 
                             width: 95%;
+
                             &.square {
                                 width: 75%;
                             }
@@ -69,8 +70,8 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: center;
-                        gap: 10vh;
+                        align-items: start;
+                        gap: 5vh;
 
                         &>h1 {
                             font-size: var(--normal-1);
@@ -82,16 +83,17 @@
                             text-shadow: var(--text-shadow) rgba(black, .5);
 
                             &>span {
-                                color: var(--accent-color);
+                                font-weight: var(--poppins-bold);
                             }
                         }
                     }
                 }
             }
 
-            div.swiper-button-prev, div.swiper-button-next {
+            div.swiper-button-prev,
+            div.swiper-button-next {
                 &::after {
-                    font-size: 5vw;
+                    font-size: 4vw;
                     color: var(--secondary-color);
                     text-shadow: var(--text-shadow) black;
 
@@ -103,7 +105,9 @@
                         color: var(--accent-color);
                         text-shadow: none;
                         transform: translate(-1px, 1px)
-                    };
+                    }
+
+                    ;
                 }
             }
         }
@@ -141,7 +145,7 @@
             }
 
             &:hover {
-                box-shadow: inset 100vw 0 rgba($color: #FFB858, $alpha: 1.0);
+                box-shadow: inset 100vw 0 rgba($color: #F5C07B, $alpha: 1.0);
                 width: 87%;
             }
 
@@ -152,11 +156,12 @@
                     box-shadow: inset 100vw 0 var(--bonus-color);
                 }
             }
-            
+
         }
     }
 
-    &>div.transition-footer, &>div.transition-liste {
+    &>div.transition-footer,
+    &>div.transition-liste {
         width: 100%;
 
         display: flex;
@@ -204,14 +209,16 @@
             transform: rotate(360deg);
         }
     }
-    
+
     @keyframes shining {
         from {
             filter: drop-shadow(0 0 1vh rgba(yellow, .8));
         }
+
         50% {
             filter: drop-shadow(0 0 5vh rgba(yellow, 1));
         }
+
         to {
             filter: drop-shadow(0 0 1vh rgba(yellow, .8));
         }

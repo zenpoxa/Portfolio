@@ -1,183 +1,187 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="/styles.scss" rel="stylesheet">
+  <link href="/styles.scss" rel="stylesheet">
 
-    <title> Portfolio - Tabas'KHO </title>
-  </head>
+  <title> Portfolio - Tabas'KHO </title>
+</head>
 
 
-  <body id="un-projet-body">
+<body id="un-projet-body">
 
-    <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img id="logo-txt" src="/svg/logo-text.svg">
+  <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
+  <img id="logo-txt" src="/svg/logo-text.svg">
 
-    <nav>
-      <!-- menu de navigation -->
-      <ul>
-        <li><a href="/">Moi ?</a></li>
-        <li><a href="/Pages/projets.html">Projets</a></li>
-        <li><a href="/Pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <!-- menu de navigation -->
+    <ul>
+      <li><a href="/">Moi ?</a></li>
+      <li><a href="/Pages/projets.html">Projets</a></li>
+      <li><a href="/Pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="nav-bottom">
-      <div class="prev cliquable" title="projet précédent">&larr;</div>
-      <div class="current"></div>
-      <div class="next cliquable" title="projet suivant">&rarr;</div>
+  <div class="nav-bottom">
+    <div class="prev cliquable" title="projet précédent">&larr;</div>
+    <div class="current"></div>
+    <div class="next cliquable" title="projet suivant">&rarr;</div>
+  </div>
+
+  <header>
+    <div class="nom-projet">
+      <div class="wave-effect">
+        <h1 class="interview title-boom">Tabas'KHO</h1>
+        <h1 class="interview title-boom">Tabas'KHO</h1>
+        <span class="title-boom">hahaha...</span>
+      </div>
     </div>
 
-    <header>
-      <div class="nom-projet">
-        <div class="wave-effect">
-          <h1 class="interview title-boom">Tabas'KHO</h1>
-          <h1 class="interview title-boom">Tabas'KHO</h1>
-          <span class="title-boom">hahaha...</span>
-        </div>
-      </div>
+    <div class="competence">
+      <h1><span>Développer en équipe</span> des applications informatiques</h1>
+    </div>
 
-      <div class="competence">
-        <h1><span>Développer en équipe</span> des applications informatiques</h1>
-      </div>
+    <div class="description-projet">
+      <h2>Késako ? <img class="roll-each" src="/svg/logo-shadow.svg"></h2>
+      <p>
+        Ce projet universitaire visait à créer un site web de <span>streaming</span>
+        en équipe de <span>4</span> pour une société immaginée.
+        <br>
+        Chaque membre de l'équipe était responsable d'une page.
+      </p>
+      <p>
+        <span class="bold">Objectif :</span> Partir d'un recueil des besoins, et se débrouiller pour en faire <span
+          class="i">des merveilles.</span>
+      </p>
+    </div>
+  </header>
 
-      <div class="description-projet">
-        <h2>Késako ? <img class="roll-each" src="/svg/logo-shadow.svg"></h2>
-        <p>
-          Ce projet universitaire visait à créer un site web de <span>streaming</span>
-          en équipe de <span>4</span> pour une société immaginée.
-          <br>
-          Chaque membre de l'équipe était responsable d'une page.
-        </p>
-        <p>
-          <span class="bold">Objectif :</span> Partir d'un recueil des besoins, et se débrouiller pour en faire <span class="i">des merveilles.</span>
-        </p>
-      </div>
-    </header>
+  <!-- PRESENTATION DES ETAPES -->
+  <section class="etapes">
+    <div class="trait">
+      <hr>
+      <h1>Étapes <img class="roll-each" src="/svg/logo.svg"></h1>
+    </div>
 
-    <!-- PRESENTATION DES ETAPES -->
-    <section class="etapes">
-      <div class="trait">
-        <hr>
-        <h1>Étapes <img class="roll-each" src="/svg/logo.svg"></h1>
-      </div>
+    <div class="liste-etapes">
 
-      <div class="liste-etapes">
+      <a title="Voir le site" href="https://tabas-kho.vercel.app/" target="_blank">
+        <div class="swiper">
 
-        <a title="Voir le site" href="https://tabas-kho.vercel.app/" target="_blank">
-          <div class="swiper">
+          <!-- wrapper avec toutes les slies -->
+          <div class="swiper-wrapper">
 
-            <!-- wrapper avec toutes les slies -->
-            <div class="swiper-wrapper">
-
-              <!-- Une slide, une image -->
-              <div class="swiper-slide">
-                <img src="/img/tabas-kho-1.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="/img/tabas-kho-2.png">
-              </div>
-              <div class="swiper-slide">
-                <img src="/img/tabas-kho-3.png">
-              </div>
-
+            <!-- Une slide, une image -->
+            <div class="swiper-slide">
+              <img src="/img/tabas-kho-1.png">
             </div>
+            <div class="swiper-slide">
+              <img src="/img/tabas-kho-2.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/tabas-kho-3.png">
+            </div>
+
           </div>
-        </a>
+        </div>
+      </a>
 
-        <p>1. Recueil des besoins, listage des fonctionnalités</p>
-        <p>2. Réalisation de la charte graphique et de la maquette</p>
-        <p>3. Codage du site</p>
-        <p>4. Soutenance orale de présentation</p>
-      </div>
+      <p>1. Recueil des besoins, listage des fonctionnalités</p>
+      <p>2. Réalisation de la charte graphique et de la maquette</p>
+      <p>3. Codage du site</p>
+      <p>4. Soutenance orale de présentation</p>
+    </div>
 
-      <div class="technos">
-        <h1>Elles ont été utilisées ! <span>(les technos)</span></h1>
+    <div class="technos">
+      <h1>Elles ont été utilisées ! <span>(les technos)</span></h1>
 
-        <div class="wrapper">
+      <div class="wrapper">
 
-          <div>
-            <a target="_blank" href="https://html5.org/"><img src="/svg/html.svg" class="cliquable"></a>
-            <a target="_blank" href="https://sass-lang.com/"><img src="/svg/sass.svg" class="cliquable"></a>
-            <a target="_blank" href="https://devdocs.io/javascript/"><img src="/svg/js.svg" class="cliquable"></a>
-            <a target="_blank" href="https://gsap.com/"><img src="/svg/gsap.svg" class="cliquable"></a>
-          </div>
-  
-          <div>
-            <a target="_blank" href="https://html5.org/"><img src="/svg/html.svg" class="cliquable"></a>
-            <a target="_blank" href="https://sass-lang.com/"><img src="/svg/sass.svg" class="cliquable"></a>
-            <a target="_blank" href="https://devdocs.io/javascript/"><img src="/svg/js.svg" class="cliquable"></a>
-            <a target="_blank" href="https://gsap.com/"><img src="/svg/gsap.svg" class="cliquable"></a>
-          </div>
-  
+        <div>
+          <a target="_blank" href="https://html5.org/"><img src="/svg/html.svg" class="cliquable"></a>
+          <a target="_blank" href="https://sass-lang.com/"><img src="/svg/sass.svg" class="cliquable"></a>
+          <a target="_blank" href="https://devdocs.io/javascript/"><img src="/svg/js.svg" class="cliquable"></a>
+          <a target="_blank" href="https://gsap.com/"><img src="/svg/gsap.svg" class="cliquable"></a>
+        </div>
+
+        <div>
+          <a target="_blank" href="https://html5.org/"><img src="/svg/html.svg" class="cliquable"></a>
+          <a target="_blank" href="https://sass-lang.com/"><img src="/svg/sass.svg" class="cliquable"></a>
+          <a target="_blank" href="https://devdocs.io/javascript/"><img src="/svg/js.svg" class="cliquable"></a>
+          <a target="_blank" href="https://gsap.com/"><img src="/svg/gsap.svg" class="cliquable"></a>
         </div>
 
       </div>
-    </section>
 
-    <!-- ACQUIS -->
-    <section class="acquis">
-      <div class="trait">
-        <h1>Acquis <img class="roll-each" src="/svg/logo.svg"></h1>
-        <hr>
-      </div>
+    </div>
+  </section>
 
-      <div class="liste-acquis">
-        <p>
-          Ce projet était un <span>jalon.</span> Mon premier "gros" projet en équipe, avec une vraie impression de travailler en entreprise.
-        </p>
-        <p>
-          Il a consolidé ma <span>ponctualité</span> quant aux dealines, et un respect des consignes données.
-          <br>
-          Aussi, un premier pas dans <span>github / gitlab</span> à plusieurs m'a aidé à comprendre l'organisation du code en équipe.
-        </p>
-        <p>
-          J'ai également pu m'entraîner sur la présentation orale et claire du site face d'un petit public, en fin de projet.
-        </p>
-      </div>
-    </section>
+  <!-- ACQUIS -->
+  <section class="acquis">
+    <div class="trait">
+      <h1>Acquis <img class="roll-each" src="/svg/logo.svg"></h1>
+      <hr>
+    </div>
 
-    <!-- TRANSITION FOOTER -->
-    <hr class="line-spawn">
-    <img class="transition-footer" src="/svg/logo-shadow.svg">
+    <div class="liste-acquis">
+      <p>
+        Ce projet était un <span>jalon.</span> Mon premier "gros" projet en équipe, avec une vraie impression de
+        travailler en entreprise.
+      </p>
+      <p>
+        Il a consolidé ma <span>ponctualité</span> quant aux dealines, et un respect des consignes données.
+        <br>
+        Aussi, un premier pas dans <span>github / gitlab</span> à plusieurs m'a aidé à comprendre l'organisation du code
+        en équipe.
+      </p>
+      <p>
+        J'ai également pu m'entraîner sur la présentation orale et claire du site face d'un petit public, en fin de
+        projet.
+      </p>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <article>
-        <h1>Coordonnées</h1>
-        <p>
-          35131 Chartres-de-Bretagne, France<br>
-          06 58 68 71 85<br>
-          richard.terrade.pro@gmail.com
-        </p>
-      </article>
+  <!-- TRANSITION FOOTER -->
+  <hr class="line-spawn">
+  <img class="transition-footer" src="/svg/logo-shadow.svg">
 
-      <article>
-        <h1>Navigation</h1>
-        <p>
-          <a href="/">Accueil</a><br>
-          <a href="/Pages/projets.html">Projets</a><br>
-          <a href="/Pages/contact.html">Contact</a>
-        </p>
-      </article>
+  <!-- FOOTER -->
+  <footer>
+    <article>
+      <h1>Coordonnées</h1>
+      <p>
+        22300, Lannion, France<br>
+        06 58 68 71 85<br>
+        richard.terrade.pro@gmail.com
+      </p>
+    </article>
 
-      <article>
-        <h1>Réseaux</h1>
-        <p>
-          <a href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
-          <a href="https://www.linkedin.com/in/richard-terrade-400bb9302/">LinkedIn</a><br>
-        </p>
-      </article>
-    </footer>
+    <article>
+      <h1>Navigation</h1>
+      <p>
+        <a href="/">Accueil</a><br>
+        <a href="/Pages/projets.html">Projets</a><br>
+        <a href="/Pages/contact.html">Contact</a>
+      </p>
+    </article>
 
-    <script type="module" src="/Functions/smooth-scroll.js"></script>
-    <script type="module" src="/Functions/un-projet.js"></script>
-    <script type="module" src="/Functions/anims.js"></script>
-  </body>
+    <article>
+      <h1>Réseaux</h1>
+      <p>
+        <a href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/richard-terrade-400bb9302/">LinkedIn</a><br>
+      </p>
+    </article>
+  </footer>
+
+  <script type="module" src="/Functions/smooth-scroll.js"></script>
+  <script type="module" src="/Functions/un-projet.js"></script>
+  <script type="module" src="/Functions/anims.js"></script>
+</body>
 
 
 </html>

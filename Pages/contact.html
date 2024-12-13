@@ -1,152 +1,151 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="/styles.scss" rel="stylesheet">
+  <link href="/styles.scss" rel="stylesheet">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <title> Portfolio - Contact </title>
-  </head>
+  <title> Portfolio - Contact </title>
+</head>
 
 
-  <body id="contact-body">
+<body id="contact-body">
 
-    <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
-    <img id="logo-txt" src="/svg/logo-text.svg">
+  <!-- LOGO AVEC TEXTE EN HAUT A GAUCHE -->
+  <img id="logo-txt" src="/svg/logo-text.svg">
 
-    <nav>
-        <!-- menu de navigation -->
-        <ul>
-          <li><a href="/">Moi ?</a></li>
-          <li><a href="/Pages/projets.html">Projets</a></li>
-          <li><a href="/Pages/contact.html">Contact</a></li>
-        </ul>
-  
-        <!-- bouton pour DL le CV -->
-        <a href="/CV_TERRADE_RICHARD.pdf" title="Téléchargement requis" download="CV_TERRADE_RICHARD.pdf">Mon CV</a>
-    </nav>
+  <nav>
+    <!-- menu de navigation -->
+    <ul>
+      <li><a href="/">Moi ?</a></li>
+      <li><a href="/Pages/projets.html">Projets</a></li>
+      <li><a href="/Pages/contact.html">Contact</a></li>
+    </ul>
 
-    <!-- PARTIE FORMULAIRE -->
-    <div class="formulaire-mail">
+    <!-- bouton pour DL le CV -->
+    <a href="/CV_TERRADE_RICHARD.pdf" title="Téléchargement requis" download="CV_TERRADE_RICHARD.pdf">Mon CV</a>
+  </nav>
 
+  <!-- PARTIE FORMULAIRE -->
+  <div class="formulaire-mail">
+
+    <div>
+      <img src="../svg/round.svg">
+      <h1>Formulaire mail</h1>
+      <img src="../svg/round.svg">
+    </div>
+
+    <form id="contact-form">
+      <input type="hidden" name="contact_number">
+      <input type="text" id="name" name="user_name" placeholder="NOM Prénom">
+      <input type="email" id="email" name="user_email" placeholder="Votre mail">
+      <textarea name="message" placeholder="Votre message..."></textarea>
       <div>
-          <img src="../svg/round.svg">
-          <h1>Formulaire mail</h1>
-          <img src="../svg/round.svg">
+        <p id="result"></p>
+        <input id="envoyer" type="submit" value="Envoyer  →">
+      </div>
+    </form>
+
+  </div>
+
+  <!-- TRAIT DE SEPARATION -->
+  <hr class="line-spawn">
+
+  <!-- PARTIE RESEAUX -->
+  <div class="gardons-contact">
+    <div class="titre">
+      <img src="/svg/round.svg">
+      <h1>Gardons contact</h1>
+      <img src="/svg/round.svg">
+    </div>
+
+    <!-- gradation des textes -->
+    <div class="gradation">
+      <p class="typing">
+        Je vais vous dire une chose :<br>
+        Je vous aime bien.
+      </p>
+      <p class="sliding">
+        Alors nous pourrions créer un contact :)
+      </p>
+      <p class="fading">
+        Discuter, échanger
+      </p>
+      <p class="fading">
+        Faire connaissance.
+      </p>
+      <p class="typing">
+        Être de bons<br>
+        collaborateurs.
+      </p>
+      <p class="final title-boom">
+        Voir les<br>
+        choses en <span>grand !</span>
+      </p>
+    </div>
+
+    <!-- présentation des réseaux -->
+    <div class="reseaux">
+
+      <!-- flèche vers réseaux -->
+      <div class="fleche">
+        <img src="/svg/fleche-bas.svg">
       </div>
 
-      <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <input type="text" id="name" name="user_name" placeholder="NOM Prénom">
-        <input type="email" id="email" name="user_email" placeholder="Votre mail">
-        <textarea name="message" placeholder="Votre gentil message d'amour :)"></textarea>
-        <div>
-          <p id="result"></p>
-          <input id="envoyer" type="submit" value="Envoyer  →">
-        </div>
-      </form>
-
+      <!-- logos cliquables -->
+      <div class="logos">
+        <a href="https://github.com/search?q=zenpoxa%2F&type=repositories" target="_blank"><img
+            src="/svg/github.svg"></a>
+        <a href="https://www.linkedin.com/in/richard-terrade-400bb9302/" target="_blank"><img
+            src="/svg/linkedin.svg"></a>
+      </div>
     </div>
 
-    <!-- TRAIT DE SEPARATION -->
+  </div>
+
+  <!-- TRANSITION FOOTER -->
+  <div class="transition-footer">
+    <h1>Si besoin</h1>
+    <img class="roll-each" src="/svg/logo.svg">
     <hr class="line-spawn">
+  </div>
 
-    <!-- PARTIE RESEAUX -->
-    <div class="gardons-contact">
-        <div class="titre">
-            <img src="/svg/round.svg">
-            <h1>Gardons contact</h1>
-            <img src="/svg/round.svg">
-        </div>
+  <!-- FOOTER -->
+  <footer>
+    <article>
+      <h1>Coordonnées</h1>
+      <p>
+        22300, Lannion, France<br>
+        06 58 68 71 85<br>
+        richard.terrade.pro@gmail.com
+      </p>
+    </article>
 
-        <!-- gradation des textes -->
-        <div class="gradation">
-            <p class="typing">
-                Je vais vous dire une chose :<br>
-                Je vous aime bien.
-            </p>
-            <p class="sliding">
-                Alors nous pourrions créer un contact :)
-            </p>
-            <p class="fading">
-              Discuter, échanger
-            </p>
-            <p class="fading">
-                Faire connaissance.
-            </p>
-            <p class="typing">
-                Être de bons<br>
-                collaborateurs.
-            </p>
-            <p class="final title-boom">
-                Voir les<br>
-                choses en <span>grand !</span>
-            </p>
-        </div>
+    <article>
+      <h1>Navigation</h1>
+      <p>
+        <a href="/">Accueil</a><br>
+        <a href="/Pages/projets.html">Projets</a><br>
+        <a href="/Pages/contact.html">Contact</a>
+      </p>
+    </article>
 
-        <!-- présentation des réseaux -->
-        <div class="reseaux">
-            <p>Hem Hem... Pardon je me suis emporté...</p>
-            <p>Voici mes contacts</p>
-            
-            <!-- flèche vers réseaux -->
-            <div class="fleche">
-              <img src="/svg/fleche-bas.svg">
-              <p>( Chut, c'est confidentiel )</p>  
-            </div>
+    <article>
+      <h1>Réseaux</h1>
+      <p>
+        <a target="_blank" href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
+        <a target="_blank" href="https://www.linkedin.com/in/richard-terrade-400bb9302/">LinkedIn</a><br>
+      </p>
+    </article>
+  </footer>
 
-            <!-- logos cliquables -->
-            <div class="logos">
-                <a href="https://github.com/search?q=zenpoxa%2F&type=repositories" target="_blank"><img src="/svg/github.svg"></a>
-                <a href="https://www.linkedin.com/in/richard-terrade-400bb9302/" target="_blank"><img src="/svg/linkedin.svg"></a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- TRANSITION FOOTER -->
-    <div class="transition-footer">
-        <h1>Si besoin</h1>
-        <img class="roll-each" src="/svg/logo.svg">
-        <hr class="line-spawn">
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-      <article>
-        <h1>Coordonnées</h1>
-        <p>
-          35131 Chartres-de-Bretagne, France<br>
-          06 58 68 71 85<br>
-          richard.terrade.pro@gmail.com
-        </p>
-      </article>
-
-      <article>
-        <h1>Navigation</h1>
-        <p>
-          <a href="/">Accueil</a><br>
-          <a href="/Pages/projets.html">Projets</a><br>
-          <a href="/Pages/contact.html">Contact</a>
-        </p>
-      </article>
-
-      <article>
-        <h1>Réseaux</h1>
-        <p>
-          <a target="_blank" href="https://github.com/search?q=zenpoxa%2F&type=repositories">GitHub</a><br>
-          <a target="_blank" href="https://www.linkedin.com/in/richard-terrade-400bb9302/">LinkedIn</a><br>
-        </p>
-      </article>
-    </footer>
-
-    <script type="module" src="/Functions/smooth-scroll.js"></script>
-    <script type="module" src="/Functions/contact.js"></script>
-    <script type="module" src="/Functions/anims.js"></script>
-  </body>
+  <script type="module" src="/Functions/smooth-scroll.js"></script>
+  <script type="module" src="/Functions/contact.js"></script>
+  <script type="module" src="/Functions/anims.js"></script>
+</body>
 
 </html>

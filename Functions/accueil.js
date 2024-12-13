@@ -21,15 +21,15 @@ var nbLogos = allSlides[0].querySelectorAll("img").length;
 let i = 0;
 
 while (i < nbLogos) {
-  let logo1 = allSlides[0].querySelector(`a:nth-child(${i+1})>img`);
-  let logo2 = allSlides[1].querySelector(`a:nth-child(${i+1})>img`);
+  let logo1 = allSlides[0].querySelector(`a:nth-child(${i + 1})>img`);
+  let logo2 = allSlides[1].querySelector(`a:nth-child(${i + 1})>img`);
 
-  logo1.style.width = `${(100/nbLogos)*.6}vw`;
-  logo2.style.width = `${(100/nbLogos)*.6}vw`;
+  logo1.style.width = `${(100 / nbLogos) * .6}vw`;
+  logo2.style.width = `${(100 / nbLogos) * .6}vw`;
 
-  logo1.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
-  logo2.style.left = `${(allSlides[0].clientWidth/nbLogos)*i}px`;
-  
+  logo1.style.left = `${(allSlides[0].clientWidth / nbLogos) * i}px`;
+  logo2.style.left = `${(allSlides[0].clientWidth / nbLogos) * i}px`;
+
   i++;
 }
 
@@ -42,22 +42,22 @@ var horizontalArticles = gsap.utils.toArray("div.horizontal-scroll>article");
 
 // timeline gsap définie
 const horizontal_tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: Ambitions,
-      pin: true,
-      scrub: 1,
-      start: "bottom bottom",
-      end: "+=" + (Ambitions.clientHeight),
-      snap: {
-        snapTo: 1 / (horizontalArticles.length-1),
-        duration: { min: 0.2, max: 0.4},
-        delay: 0.2,
-        ease: "power2.out"
-      },
+  scrollTrigger: {
+    trigger: Ambitions,
+    pin: true,
+    scrub: 1,
+    start: "bottom bottom",
+    end: "+=" + (Ambitions.clientHeight),
+    snap: {
+      snapTo: 1 / (horizontalArticles.length - 1),
+      duration: { min: 0.2, max: 0.4 },
+      delay: 0.2,
+      ease: "power1.out"
     },
-  });
+  },
+});
 
-  horizontal_tl.to(wrapper, {
-    xPercent: -100 * ((horizontalArticles.length - 1) / horizontalArticles.length),
-    ease: "none",
-  });
+horizontal_tl.to(wrapper, {
+  xPercent: -100 * ((horizontalArticles.length - 1) / horizontalArticles.length),
+  ease: "none",
+});
