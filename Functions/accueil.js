@@ -36,28 +36,30 @@ while (i < nbLogos) {
 /****************************
  * SCROLL HORIZONTAL PC
  ***************************/
-var Ambitions = myBody.querySelector("div.ambitions");
+var ambitions = myBody.querySelector("div.ambitions");
 var wrapper = myBody.querySelector("div.horizontal-scroll");
 var horizontalArticles = gsap.utils.toArray("div.horizontal-scroll>article");
 
 // timeline gsap définie
-const horizontal_tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: Ambitions,
-    pin: true,
-    scrub: 1,
-    start: "bottom bottom",
-    end: "+=" + (Ambitions.clientHeight),
-    snap: {
-      snapTo: 1 / (horizontalArticles.length - 1),
-      duration: { min: 0.2, max: 0.4 },
-      delay: 0.2,
-      ease: "power1.out"
+if (window.innerWidth > 720) {
+  const horizontal_tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ambitions,
+      pin: true,
+      scrub: 1,
+      start: "bottom bottom",
+      end: "+=" + (ambitions.clientHeight),
+      snap: {
+        snapTo: 1 / (horizontalArticles.length - 1),
+        duration: { min: 0.2, max: 0.4 },
+        delay: 0.2,
+        ease: "power1.out"
+      },
     },
-  },
-});
+  });
 
-horizontal_tl.to(wrapper, {
-  xPercent: -100 * ((horizontalArticles.length - 1) / horizontalArticles.length),
-  ease: "none",
-});
+  horizontal_tl.to(wrapper, {
+    xPercent: -100 * ((horizontalArticles.length - 1) / horizontalArticles.length),
+    ease: "none",
+  });
+}

@@ -22,16 +22,24 @@
     background-color: var(--accent-color);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--primary-color);
     overflow-x: hidden;
 }
 
-a, button, input, textarea {
+a,
+button,
+input,
+textarea {
     text-decoration: none;
     color: inherit;
 
-    &:hover, & *:hover {
+    &:hover,
+    & *:hover {
         cursor: url("/svg/pointer.svg"), auto !important;
     }
 }
@@ -40,7 +48,10 @@ a, button, input, textarea {
     cursor: url("/svg/pointer.svg"), auto !important;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     color: var(--secondary-color);
 }
 

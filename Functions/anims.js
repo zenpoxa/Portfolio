@@ -2,8 +2,8 @@
  * IMPORTS & OUTILS
  ***************************/
 import gsap from "gsap";
-import {ScrollTrigger} from "gsap/all";
-import {CustomEase} from "gsap/CustomEase";
+import { ScrollTrigger } from "gsap/all";
+import { CustomEase } from "gsap/CustomEase";
 
 import * as utils from "./utils.js";
 
@@ -26,20 +26,20 @@ document.querySelectorAll(".roll-once").forEach(roll => {
 
 document.querySelectorAll(".roll-each").forEach(roll => {
     gsap.fromTo(roll,
-    {
-        scale: 1,
-    },
-    {
-        scrollTrigger: {
-            trigger: roll,
-            start: "center center",
-            toggleActions: "restart none none none",
+        {
+            scale: 1,
         },
-        rotate: 360,
-        scale: 1,
-        duration: .5,
-        ease: 'power1.out'
-    });
+        {
+            scrollTrigger: {
+                trigger: roll,
+                start: "center center",
+                toggleActions: "restart none none none",
+            },
+            rotate: 360,
+            scale: 1,
+            duration: .5,
+            ease: 'power1.out'
+        });
 });
 
 /********************************
@@ -47,10 +47,12 @@ document.querySelectorAll(".roll-each").forEach(roll => {
  *******************************/
 var leBonjour = document.querySelector("h1.second");
 var titreAcceuil = gsap.timeline(
-    {defaults: {
-        duration: 1,
-        ease: CustomEase.create("custom", "M0,0 C0.159,0 0.258,0.252 0.303,0.417 0.446,0.945 0.533,1.115 0.623,1.14 0.634,1.142 0.72,1.012 0.72,1.012 0.72,1.012 0.838,0.936 0.838,0.936 0.838,0.936 0.978,0.961 1,1 "),
-    }}
+    {
+        defaults: {
+            duration: 1,
+            ease: CustomEase.create("custom", "M0,0 C0.159,0 0.258,0.252 0.303,0.417 0.446,0.945 0.533,1.115 0.623,1.14 0.634,1.142 0.72,1.012 0.72,1.012 0.72,1.012 0.838,0.936 0.838,0.936 0.838,0.936 0.978,0.961 1,1 "),
+        }
+    }
 );
 document.querySelectorAll("h1.first").forEach(bien => {
     titreAcceuil.fromTo(bien,
@@ -70,7 +72,7 @@ document.querySelectorAll("h1.second").forEach(leBonjour => {
         {
             visibility: 'visible',
             scale: 1,
-        },"-=75%")
+        }, "-=75%")
 });
 
 /********************************
@@ -78,44 +80,44 @@ document.querySelectorAll("h1.second").forEach(leBonjour => {
  *******************************/
 document.querySelectorAll(".title-boom").forEach(title => {
     gsap.fromTo(title,
-    {
-        scale: .1,
-        visibility: 'hidden',
-    },
-    {
-        scrollTrigger: {
-            trigger: title,
-            start: "center center",
+        {
+            scale: .1,
+            visibility: 'hidden',
         },
+        {
+            scrollTrigger: {
+                trigger: title,
+                start: "center center",
+            },
 
-        visibility: 'visible',
-        ease: CustomEase.create("custom", "M0,0 C0.159,0 0.258,0.252 0.303,0.417 0.446,0.945 0.533,1.115 0.623,1.14 0.634,1.142 0.72,1.012 0.72,1.012 0.72,1.012 0.838,0.936 0.838,0.936 0.838,0.936 0.978,0.961 1,1 "),
-        scale: 1,
-        duration: 1,
-    });
+            visibility: 'visible',
+            ease: CustomEase.create("custom", "M0,0 C0.159,0 0.258,0.252 0.303,0.417 0.446,0.945 0.533,1.115 0.623,1.14 0.634,1.142 0.72,1.012 0.72,1.012 0.72,1.012 0.838,0.936 0.838,0.936 0.838,0.936 0.978,0.961 1,1 "),
+            scale: 1,
+            duration: 1,
+        });
 });
 
 /********************************
- * APPARITION MODERNE DES LIGNES
+ * APPARITION DES LIGNES
  *******************************/
 document.querySelectorAll(".line-spawn").forEach(line => {
     gsap.fromTo(line,
-    {
-        scaleX: .1,
-        scaleY: 1.5,
-        visibility: "hidden",
-    }, 
-    {
-        scrollTrigger: {
-            trigger: line,
-            start: "top center",
+        {
+            scaleX: .1,
+            scaleY: 1.5,
+            visibility: "hidden",
         },
+        {
+            scrollTrigger: {
+                trigger: line,
+                start: "top center",
+            },
 
-        visibility: "visible",
-        scaleX: 1,
-        scaleY: 1,
-        duration: .4,
-    });
+            visibility: "visible",
+            scaleX: 1,
+            scaleY: 1,
+            duration: .4,
+        });
 });
 
 /*************************************
@@ -125,7 +127,7 @@ document.querySelectorAll("div.gradation p:not(.final), div.morphing").forEach(t
     gsap.fromTo(texte,
         {
             visibility: "hidden",
-        }, 
+        },
         {
             scrollTrigger: {
                 trigger: texte,
@@ -164,7 +166,7 @@ document.querySelectorAll("div.gradation p.fading").forEach(texte => {
                 trigger: texte,
                 start: "center bottom",
             },
-            
+
             y: 0,
             duration: 1.25,
             opacity: 1,
@@ -180,7 +182,7 @@ document.querySelectorAll("div.gradation p.sliding").forEach(texte => {
                 trigger: texte,
                 start: "center bottom",
             },
-            
+
             xPercent: -100,
             duration: 1.25,
             opacity: 1,
