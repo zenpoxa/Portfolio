@@ -2,7 +2,7 @@ body {
     &>#logo-txt {
         position: absolute;
         left: .5rem;
-        top: 1vh;
+        top: .5rem;
         width: 15vw;
 
         @media (max-width: 720px) {
@@ -30,7 +30,6 @@ body {
                 transform: translateX(-15%);
             }
 
-
             &>li {
                 font-weight: var(--poppins-semibold);
                 font-size: var(--normal-2);
@@ -46,7 +45,7 @@ body {
 
                 &>a {
                     display: inline-block;
-                    padding: 1vw 0;
+                    padding: .5vw 0;
                     width: 11vw;
 
                     @media (max-width: 720px) {
@@ -91,7 +90,7 @@ body {
 
             height: 15vw;
             width: 50vw;
-            padding-bottom: .5vh;
+            padding-bottom: .5vw;
 
             font-size: var(--normal-2);
             font-weight: var(--poppins-bold);

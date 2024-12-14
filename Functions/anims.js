@@ -100,25 +100,27 @@ document.querySelectorAll(".title-boom").forEach(title => {
 /********************************
  * APPARITION DES LIGNES
  *******************************/
-document.querySelectorAll(".line-spawn").forEach(line => {
-    gsap.fromTo(line,
-        {
-            scaleX: .1,
-            scaleY: 1.5,
-            visibility: "hidden",
-        },
-        {
-            scrollTrigger: {
-                trigger: line,
-                start: "top center",
+if (window.innerWidth > 720) {
+    document.querySelectorAll(".line-spawn").forEach(line => {
+        gsap.fromTo(line,
+            {
+                scaleX: .1,
+                scaleY: 1.5,
+                visibility: "hidden",
             },
+            {
+                scrollTrigger: {
+                    trigger: line,
+                    start: "top center",
+                },
 
-            visibility: "visible",
-            scaleX: 1,
-            scaleY: 1,
-            duration: .4,
-        });
-});
+                visibility: "visible",
+                scaleX: 1,
+                scaleY: 1,
+                duration: .4,
+            });
+    });
+}
 
 /*************************************
  * APPARITION DU TEXTE POUR LE CONTACT
