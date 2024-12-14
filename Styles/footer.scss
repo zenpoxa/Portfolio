@@ -1,5 +1,4 @@
 body {
-
     &>footer {
         width: 100vw;
 
@@ -7,7 +6,7 @@ body {
         justify-content: center;
         gap: 10vw;
 
-        padding: 0 2vw 7.5vw;
+        padding: 0 2vw 3rem;
 
         &>article {
             display: flex;
@@ -17,12 +16,20 @@ body {
             &>h1 {
                 font-weight: var(--poppins-bold);
                 font-size: var(--normal-2);
-                text-shadow: var(--text-shadow) rgba(black, .5)
+                text-shadow: var(--text-shadow) rgba(black, .5);
+
+                @media (max-width: 720px) {
+                    font-size: var(--small-1);
+                }
             }
 
             &>p {
                 font-size: var(--small-1);
                 line-height: 250%;
+
+                @media (max-width: 720px) {
+                    font-size: var(--small-2);
+                }
 
                 &>a {
                     transition: font-weight .1s;

@@ -4,6 +4,10 @@ body {
         left: .5rem;
         top: 1vh;
         width: 15vw;
+
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
 
     &>nav {
@@ -21,6 +25,11 @@ body {
         &>ul {
             list-style-type: none;
             display: flex;
+
+            @media (max-width: 720px) {
+                transform: translateX(-15%);
+            }
+
 
             &>li {
                 font-weight: var(--poppins-semibold);
