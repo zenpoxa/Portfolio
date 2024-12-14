@@ -1,7 +1,7 @@
 body {
     &>#logo-txt {
         position: absolute;
-        left: .5vw;
+        left: .5rem;
         top: 1vh;
         width: 15vw;
     }
@@ -37,8 +37,14 @@ body {
 
                 &>a {
                     display: inline-block;
-                    padding: 1vh 0;
-                    width: 12vw;
+                    padding: 1vw 0;
+                    width: 11vw;
+
+                    @media (max-width: 720px) {
+                        & {
+                            width: 20vw;
+                        }
+                    }
                 }
             }
 
@@ -67,6 +73,13 @@ body {
             right: 0;
             top: 0;
 
+            @media (max-width: 720px) {
+                & {
+                    right: 4.5vw;
+                    top: 4.5vw;
+                }
+            }
+
             height: 15vw;
             width: 50vw;
             padding-bottom: .5vh;
@@ -83,7 +96,8 @@ body {
 
             transform: translate(50%, -50%) rotate(45deg);
 
-            transition: right .2s ease, top .2s ease;
+            transition: right .2s ease,
+            top .2s ease;
 
             &:hover {
                 right: 1vw;

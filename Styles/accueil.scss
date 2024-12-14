@@ -175,6 +175,13 @@
 
                 padding: 0 15vw;
 
+                // Changer l'affichage du 'horizontal scroll' quand sur téléphone
+                @media (max-width: 720px) {
+                    & {
+                        flex-direction: column !important;
+                    }
+                }
+
                 &>h1 {
                     font-size: var(--normal-1);
                     text-shadow: var(--text-shadow) black;
