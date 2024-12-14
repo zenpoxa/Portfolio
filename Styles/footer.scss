@@ -3,10 +3,9 @@ body {
         width: 100vw;
 
         display: flex;
-        justify-content: center;
-        gap: 10vw;
+        justify-content: space-around;
 
-        padding: 0 2vw 3rem;
+        margin-bottom: 3rem;
 
         &>article {
             display: flex;

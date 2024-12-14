@@ -1,12 +1,12 @@
 // ENVOI DU MAIL
-(function() {
+(function () {
     emailjs.init('dei_TgZWrVbhtIIsj');
 })();
 
 var resultText = document.getElementById("result");
 
-window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+window.onload = function () {
+    document.getElementById('contact-form')?.addEventListener('submit', function (event) {
         event.preventDefault();
         resultText.innerHTML = "";
 
@@ -19,18 +19,17 @@ window.onload = function() {
             !this.querySelector("#name").value ||
             !this.querySelector("#email").value ||
             !this.querySelector("textarea").value
-        )
-        {
+        ) {
             newone.innerHTML = "Champs mal remplis";
         }
 
         else {
             emailjs.sendForm('service_a49mbi8', 'template_vd90ozf', this)
-            .then(function() {
-                newone.innerHTML = "Envoyé !";
-            }, function() {
-                newone.innerHTML = "Erreur serveur...";
-            });
+                .then(function () {
+                    newone.innerHTML = "Envoyé !";
+                }, function () {
+                    newone.innerHTML = "Erreur serveur...";
+                });
         }
     });
 }

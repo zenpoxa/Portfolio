@@ -7,23 +7,23 @@
     --color-quaternary: #20B2C5;
     --color-quinary: #1A93A3;
 
-    --big-1: 12rem;
-    --big-2: 6rem;
-    --big-3: 5rem;
-    --normal-1: 4rem;
-    --normal-2: 2.5rem;
-    --small-1: 2rem;
-    --small-2: 1.5rem;
+    --big-1: 10vw;
+    --big-2: 5vw;
+    --big-3: 4vw;
+    --normal-1: 3vw;
+    --normal-2: 2vw;
+    --small-1: 1.5vw;
+    --small-2: 1vw;
 
     // Petite police pour les téléphones
     @media (max-width: 720px) {
-        --big-1: 2.5rem;
-        --big-2: 2rem;
-        --big-3: 1.25rem;
-        --normal-1: 1.25rem;
-        --normal-2: 1rem;
-        --small-1: .75rem;
-        --small-2: .5rem;
+        --big-1: 8vw;
+        --big-2: 6vw;
+        --big-3: 4vw;
+        --normal-1: 4vw;
+        --normal-2: 3vw;
+        --small-1: 3vw;
+        --small-2: 3vw;
     }
 
     --text-shadow: 0 .25vw .25vw;

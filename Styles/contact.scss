@@ -1,24 +1,44 @@
 #contact-body {
+    @media (max-width: 720px) {
+        & {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
     &>div.formulaire-mail {
         width: 100vw;
 
+        @media (max-width: 720px) {
+            & {
+                flex-grow: 1;
+            }
+        }
+
         display: flex;
         flex-direction: column;
         align-items: start;
-        justify-content: end;
-        gap: 10vh;
+        justify-content: center;
+        gap: 2vw;
 
-        padding: 30vh 10vw;
-        padding-bottom: 10vh;
+        margin-top: 10vw;
+        padding: 0 10vw;
 
         &>div {
             display: flex;
             align-items: center;
-            gap: 3vh;
+            gap: 2vw;
 
             &>h1 {
                 font-size: var(--normal-1);
+
+                @media (max-width: 720px) {
+                    & {
+                        font-size: var(--big-2);
+                    }
+                }
+
                 font-weight: var(--poppins-semibold);
                 text-shadow: var(--text-shadow) black;
             }
@@ -32,17 +52,27 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            gap: 5vh;
+            gap: 1vw;
 
-            &>input, &>textarea, &>div>input {
+            &>input,
+            &>textarea,
+            &>div>input {
                 border-radius: 1vw;
-                border: .30vw var(--accent-color) solid;
-                
+                border: .3vw var(--accent-color) solid;
+
+                box-shadow: inset -.2vw .2vw .5vw rgba(0, 0, 0, .25);
+
                 background-color: var(--secondary-color);
 
-                font-size: var(--normal-2);
+                font-size: var(--small-1);
 
-                padding: .2vh 2.5vw;
+                @media (max-width: 720px) {
+                    & {
+                        font-size: var(--normal-1);
+                    }
+                }
+
+                padding: .2vw 1vw;
 
                 &::placeholder {
                     font-style: italic;
@@ -59,21 +89,26 @@
             }
 
             &>textarea {
-                height: 60vh;
-                padding: 3vh;
-                resize: none;
+                padding-top: 1vw;
 
-                font-size: var(--small-1);
+                height: 30vw;
+
+                @media (max-width: 720px) {
+                    & {
+                        height: 50vw;
+                    }
+                }
+
+                resize: none;
+                font-size: var(--small-2);
             }
 
             &>div {
                 width: 100%;
+
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-
-                margin-top: 8vh;
-                margin-bottom: 8vh;
 
                 &>p {
                     flex-grow: 1;
@@ -90,21 +125,27 @@
                     background-color: var(--accent-color);
                     border: none;
 
+                    @media (max-width: 720px) {
+                        & {
+                            font-size: var(--small-1);
+                        }
+                    }
+
                     flex-grow: 0;
-    
+
                     box-shadow: var(--repos-effect);
-    
-                    padding: 4vh 3vw;
-    
+
+                    padding: 1vw;
+
                     font-weight: var(--poppins-bold);
                     font-style: italic;
-    
+
                     min-width: 15%;
-    
+
                     align-self: flex-end;
-                    
+
                     transition: transform .3s;
-    
+
                     &:hover {
                         transform: translate(-1px, 1px);
                         box-shadow: none;
@@ -115,6 +156,12 @@
     }
 
     &>hr {
+        @media (max-width: 720px) {
+            & {
+                display: none;
+            }
+        }
+
         height: 0;
         width: 50%;
 
@@ -124,21 +171,27 @@
         transform: translateX(100%);
         transform-origin: right;
 
-        margin: 10vh 0 20vh 0;
-    } 
+        margin: 5vw 0;
+    }
 
     &>div.gardons-contact {
+        @media (max-width: 720px) {
+            & {
+                display: none;
+            }
+        }
+
         width: 100%;
 
         display: flex;
         flex-direction: column;
-        gap: 20vh;
+        gap: 10vw;
         padding: 0 10vw;
 
         &>div.titre {
             display: flex;
             align-items: center;
-            gap: 3vh;
+            gap: 1.5vw;
 
             &>h1 {
                 font-size: var(--normal-1);
@@ -154,13 +207,13 @@
         &>div.gradation {
             display: flex;
             flex-direction: column;
-            gap: 55vh;
+            gap: 30vw;
 
             &>p {
                 text-shadow: var(--text-shadow) rgba(black, .5);
 
                 &.typing {
-                    height: 20vh;
+                    height: 10vw;
                 }
 
                 &:nth-of-type(1) {
@@ -168,28 +221,33 @@
                     font-weight: var(--poppins-semibold);
                     align-self: flex-end;
                 }
+
                 &:nth-of-type(2) {
                     font-size: var(--normal-1);
                     font-weight: var(--poppins-semibold);
                     transform: rotate(-5deg);
                 }
+
                 &:nth-of-type(3) {
                     font-size: var(--big-3);
                     font-weight: var(--poppins-bold);
                     transform: rotate(5deg);
                     align-self: flex-end;
                 }
+
                 &:nth-of-type(4) {
                     font-size: var(--big-3);
                     font-weight: var(--poppins-bold);
                     transform: rotate(-10deg);
                 }
+
                 &:nth-of-type(5) {
                     font-size: var(--big-2);
                     font-weight: var(--poppins-bold);
                     align-self: flex-end;
                     text-shadow: var(--text-shadow) rgba(black, .75);
                 }
+
                 &:nth-of-type(6) {
                     font-size: calc(var(--big-1)*.85);
                     font-weight: var(--poppins-bold);
@@ -206,71 +264,40 @@
             }
         }
 
-        &>div.reseaux  {
-            margin-top: 60vh;
-            margin-bottom: 50vh;
+        &>div.reseaux {
+            margin-top: 10vw;
+            margin-bottom: 10vw;
 
             display: flex;
             flex-direction: column;
-            gap: 5vh;
+            align-items: center;
+            gap: 2.5vw;
 
-            &>p {
-                height: var(--small-1);
-                font-size: var(--small-1);
-                text-shadow: var(--text-shadow) rgba(black, .25);
-                padding-left: 10vw;
-
-                &:nth-of-type(2) {
-                    padding-left: 30vw;
-                }
-            }
-
-            &>div.fleche {
-                align-self: center;
-                display: flex;
-                align-items: center;
-                gap: 10vh;
-
-                position: relative;
-
-                &>img {
-                    width: 5vw;
-                }
-
-                &>p {
-                    font-size: var(--small-2);
-                    position: absolute;
-                    left: 100%;
-                    top: 50%;
-                    transform: translate(50%, -50%);
-                    width: 10vw;
-
-                    font-family: "Patrick Hand", cursive;
-                    font-size: var(--small-1);
-                }
+            &>img {
+                width: 5vw;
             }
 
             &>div.logos {
                 align-self: center;
                 display: flex;
-                gap: 15vh;
+                gap: 8vw;
 
                 &>a {
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    height: 12.5vh;
-                    width: 12.5vh;
+                    height: 6.5vw;
+                    width: 6.5vw;
 
                     background-color: var(--accent-color);
 
                     box-shadow: var(--repos-effect);
 
-                    border-radius: 4vh;
+                    border-radius: 2vw;
                     border: .1vw solid black;
 
-                    padding: 2vh 1vw;
+                    padding: 1vw;
 
                     transform: rotate(-45deg);
 
@@ -292,14 +319,12 @@
     }
 
     &>div.transition-footer {
-        width: 100%;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        margin-left: 10vw;
-        margin-bottom: 20vh;
+        margin-left: 5vw;
+        margin-bottom: 10vw;
 
         &>h1 {
             font-size: var(--big-2);
@@ -312,11 +337,12 @@
         }
 
         &>img {
-            width: 5vw;
+            flex: 0 0;
+            height: 5vw;
         }
 
         &>hr {
-            flex-basis: 60%;
+            flex-basis: 40%;
 
             height: 0;
             border: var(--secondary-color) .5vw solid;
@@ -328,12 +354,15 @@
         from {
             transform: scale(0);
         }
+
         70% {
             transform: scale(1.2);
         }
+
         90% {
             transform: scale(.9);
         }
+
         to {
             transform: scale(1);
         }
