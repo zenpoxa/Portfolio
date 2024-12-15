@@ -27,9 +27,6 @@ while (i < nbLogos) {
   logo1.style.width = `${(100 / nbLogos) * .6}vw`;
   logo2.style.width = `${(100 / nbLogos) * .6}vw`;
 
-  logo1.style.left = `${(allSlides[0].clientWidth / nbLogos) * i}px`;
-  logo2.style.left = `${(allSlides[0].clientWidth / nbLogos) * i}px`;
-
   i++;
 }
 

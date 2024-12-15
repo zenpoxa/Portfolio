@@ -26,9 +26,9 @@ body {
             list-style-type: none;
             display: flex;
 
-            @media (max-width: 720px) {
-                transform: translateX(-15%);
-            }
+            // @media (max-width: 720px) {
+            //     transform: translateX(-15%);
+            // }
 
             &>li {
                 font-weight: var(--poppins-semibold);
@@ -83,8 +83,8 @@ body {
 
             @media (max-width: 720px) {
                 & {
-                    right: 4.5vw;
-                    top: 4.5vw;
+                    right: 3vw;
+                    top: 3vw;
                 }
             }
 

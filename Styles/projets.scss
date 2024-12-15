@@ -83,9 +83,9 @@
 
                         &>p {
                             font-size: var(--small-1);
-                            text-shadow: var(--text-shadow) rgba(black, .5);
 
                             &>span {
+                                text-shadow: var(--text-shadow) rgba(black, .3);
                                 font-weight: var(--poppins-bold);
                             }
                         }
@@ -128,12 +128,6 @@
 
             font-size: var(--big-2);
 
-            @media (max-width: 720px) {
-                & {
-                    font-size: var(--big-3);
-                }
-            }
-
             font-weight: var(--poppins-bold);
             color: var(--primary-color);
             -webkit-text-stroke: .1vw black;
@@ -148,7 +142,7 @@
             box-shadow: var(--cliqued-effect);
 
             transition: box-shadow .7s,
-            width .7s;
+                width .7s;
 
             &>span {
                 font-style: italic;
