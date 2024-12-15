@@ -117,10 +117,9 @@
       &>p {
         font-size: var(--normal-2);
         font-weight: var(--poppins-semibold);
-        text-shadow: var(--text-shadow) rgba(black, .5);
 
         &>span {
-          text-shadow: var(--text-shadow) rgba(black, .8);
+          text-shadow: var(--text-shadow) rgba(black, .5);
           font-weight: var(--poppins-bold);
 
           &.i {
@@ -188,10 +187,9 @@
         font-size: var(--normal-2);
         font-weight: var(--poppins-semibold);
         text-align: justify;
-        text-shadow: var(--text-shadow) rgba(black, .25);
 
         &>span {
-          text-shadow: var(--text-shadow) rgba(black, .8);
+          text-shadow: var(--text-shadow) rgba(black, .5);
           font-weight: var(--poppins-bold);
 
           &.small {
