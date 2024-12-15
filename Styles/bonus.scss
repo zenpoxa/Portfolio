@@ -120,7 +120,8 @@
         text-shadow: var(--text-shadow) rgba(black, .5);
 
         &>span {
-          color: var(--accent-color);
+          text-shadow: var(--text-shadow) rgba(black, .8);
+          font-weight: var(--poppins-bold);
 
           &.i {
             font-style: italic;
