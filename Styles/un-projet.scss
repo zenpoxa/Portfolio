@@ -70,21 +70,7 @@
             position: relative;
 
             &>div.wave-effect {
-
                 height: 20vw;
-                position: relative;
-
-                &>span {
-                    font-style: italic;
-                    color: var(--accent-color);
-
-                    position: absolute;
-                    top: 75%;
-                    right: 0;
-
-                    transform: translate(-150%, -50%);
-                    opacity: .7;
-                }
 
                 &>h1 {
                     position: absolute;
