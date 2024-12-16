@@ -42,16 +42,18 @@ nextBtn.addEventListener("click", () => {
  * ANIMATION DEFILEMENT INF.
  ***************************/
 var wrapperInf = myBody.querySelector("div.technos>div.wrapper");
-var allSlides = wrapperInf.querySelectorAll("div");
-var nbLogos = allSlides[0].querySelectorAll("img").length;
-let i = 0;
+if (wrapperInf) {
+  var allSlides = wrapperInf?.querySelectorAll("div");
+  var nbLogos = allSlides[0]?.querySelectorAll("img").length;
+  let i = 0;
 
-while (i < nbLogos) {
-  let logo1_bis = allSlides[0].querySelector(`a:nth-child(${i + 1})>img`);
-  let logo2_bis = allSlides[1].querySelector(`a:nth-child(${i + 1})>img`);
+  while (i < nbLogos) {
+    let logo1_bis = allSlides[0].querySelector(`a:nth-child(${i + 1})>img`);
+    let logo2_bis = allSlides[1].querySelector(`a:nth-child(${i + 1})>img`);
 
-  logo1_bis.style.width = `${(100 / nbLogos) * .4}vw`;
-  logo2_bis.style.width = `${(100 / nbLogos) * .4}vw`;
+    logo1_bis.style.width = `${(100 / nbLogos) * .4}vw`;
+    logo2_bis.style.width = `${(100 / nbLogos) * .4}vw`;
 
-  i++;
+    i++;
+  }
 }

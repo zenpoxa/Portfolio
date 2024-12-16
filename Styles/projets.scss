@@ -33,8 +33,6 @@
                     // Certificate
                     &>div {
                         position: relative;
-                        flex-grow: 2;
-
 
                         &>svg {
                             width: 30vw;
@@ -74,6 +72,7 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: start;
+                        flex-grow: 1;
                         gap: 2.5vw;
 
                         &>h1 {

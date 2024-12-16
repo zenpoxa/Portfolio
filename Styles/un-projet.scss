@@ -195,6 +195,17 @@
                         font-weight: var(--poppins-bold);
                     }
                 }
+
+                &>a {
+                    color: var(--accent-color);
+                    text-shadow: var(--text-shadow) rgba(black, .5);
+
+                    transition: font-weight .1s;
+
+                    &:hover {
+                        font-weight: var(--poppins-extrabold);
+                    }
+                }
             }
         }
     }
@@ -314,6 +325,10 @@
                     justify-content: space-around;
 
                     &>a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
                         &>img {
                             transition: filter .2s;
 
