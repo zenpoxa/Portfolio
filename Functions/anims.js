@@ -10,38 +10,6 @@ import * as utils from "./utils.js";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(CustomEase);
 
-/****************************
- * ANIMATION DE ROTATION LOGO
- ***************************/
-document.querySelectorAll(".roll-once").forEach(roll => {
-    gsap.to(roll, {
-        scrollTrigger: {
-            trigger: roll,
-        },
-        rotate: 720,
-        duration: 1.5,
-        ease: 'power2.out'
-    });
-});
-
-document.querySelectorAll(".roll-each").forEach(roll => {
-    gsap.fromTo(roll,
-        {
-            scale: 1,
-        },
-        {
-            scrollTrigger: {
-                trigger: roll,
-                start: "center center",
-                toggleActions: "restart none none none",
-            },
-            rotate: 360,
-            scale: 1,
-            duration: .5,
-            ease: 'power1.out'
-        });
-});
-
 /********************************
  * ANIMATION DU TITRE D'ACCUEIL
  *******************************/
