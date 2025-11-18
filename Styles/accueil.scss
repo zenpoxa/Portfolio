@@ -131,6 +131,7 @@
     div.ambitions {
         display: flex;
         flex-direction: column;
+        gap: 5vw;
 
         // Quand sur PC, dire que ça prend toute la hauteur pour rendre le scroll horizontal joli
         @media (min-width: 720px) {
@@ -150,8 +151,7 @@
 
         div.horizontal-scroll {
             display: flex;
-            flex-grow: 3;
-            width: 300vw;
+            width: 400vw;
 
             // Changer l'affichage du 'horizontal scroll' quand sur téléphone
             @media (max-width: 720px) {
@@ -180,13 +180,11 @@
                 &>h1 {
                     font-size: var(--normal-1);
                     text-shadow: var(--text-shadow) black;
-
-                    flex-basis: 80%;
                 }
 
-                &>p {
+                &>p, &>ul>li {
                     font-size: var(--normal-2);
-                    text-shadow: var(--text-shadow) rgba(black, .5);
+                    color: white;
 
                     &>span {
                         font-weight: var(--poppins-bold);
@@ -201,12 +199,18 @@
                         }
                     }
                 }
+
+                &>ul {
+                    list-style-type: none;
+
+                    &>li {
+                        margin-top: 1vw;
+                    }
+                }
             }
         }
 
         div.projects-button {
-            flex-grow: 2;
-
             width: 100%;
             padding: 0 20vw;
 
@@ -223,14 +227,14 @@
             }
 
             &>button {
-                padding: 1vw 4vw;
+                padding: 1vw 2vw;
                 border: none;
                 border-radius: 1.5vw;
 
                 background-color: var(--accent-color);
                 box-shadow: var(--repos-effect);
 
-                font-size: var(--normal-1);
+                font-size: var(--normal-2);
                 font-weight: var(--poppins-semibold);
 
                 transition: transform .3s;
