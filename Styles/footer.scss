@@ -15,7 +15,6 @@ body {
             &>h1 {
                 font-weight: var(--poppins-bold);
                 font-size: var(--normal-2);
-                text-shadow: var(--text-shadow) rgba(black, .5);
 
                 @media (max-width: 720px) {
                     font-size: var(--small-1);
@@ -23,7 +22,7 @@ body {
             }
 
             &>p {
-                font-size: var(--small-1);
+                font-size: 1.5rem;
                 line-height: 250%;
 
                 @media (max-width: 720px) {

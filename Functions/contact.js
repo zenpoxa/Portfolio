@@ -3,15 +3,15 @@
     emailjs.init('dei_TgZWrVbhtIIsj');
 })();
 
-var resultText = document.getElementById("result");
-
 window.onload = function () {
-    document.getElementById('contact-form')?.addEventListener('submit', function (event) {
-        event.preventDefault();
-        resultText.innerHTML = "";
+    const form = document.getElementById('contact-form');
+    const loader = document.getElementById('loader');
 
-        resultText = document.getElementById("result");
-        var newone = resultText.cloneNode(true);
+    form?.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let resultText = document.getElementById("result");
+        const newone = resultText.cloneNode(true);
         resultText.parentNode.replaceChild(newone, resultText);
 
         // vérifier si les champs sont bien remplis
@@ -21,15 +21,17 @@ window.onload = function () {
             !this.querySelector("textarea").value
         ) {
             newone.innerHTML = "Champs mal remplis";
+            return;
         }
 
-        else {
-            emailjs.sendForm('service_a49mbi8', 'template_vd90ozf', this)
-                .then(function () {
-                    newone.innerHTML = "Envoyé !";
-                }, function () {
-                    newone.innerHTML = "Erreur serveur...";
-                });
-        }
+        newone.innerHTML = "Envoi en cours...";
+
+        emailjs.sendForm('service_a49mbi8', 'template_vd90ozf', this)
+            .then(function () {
+                newone.innerHTML = "Envoyé !";
+            })
+            .catch(function () {
+                newone.innerHTML = "Erreur, veuillez réessayer plus tard";
+            })
     });
-}
+};

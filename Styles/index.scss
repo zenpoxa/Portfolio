@@ -1,0 +1,214 @@
+#accueil-body {
+
+    overflow-x: hidden !important;
+
+    &>header {
+        margin: 10vw 0;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &>div {
+
+            h1 {
+                font-size: var(--big-1);
+                font-weight: var(--poppins-bold);
+                -webkit-text-stroke: .2vw black;
+                color: white;
+                margin-left: 5vw;
+            }
+
+            &>div {
+                display: flex;
+                align-items: start;
+
+                &>img {
+                    width: 15vw;
+                }
+            }
+        }
+    }
+
+    &>div.global-ambitions {
+        margin-bottom: 5vw;
+
+        div.who-am-i {
+            display: flex;
+            gap: 8vw;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 5vw;
+
+            width: 100vw;
+
+            &>div.photo {
+                position: relative;
+
+                &>img {
+                    border: .3vw solid var(--accent-color);
+                    border-radius: 50%;
+                    width: 20vw;
+                }
+
+                &>div {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    height: 80%;
+                    width: 80%;
+
+                    border: .5vw var(--accent-color) ridge;
+
+                    transform: translate(-50%, -50%) rotate(25deg);
+                }
+            }
+
+            &>div+div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5vw;
+
+                &>hr {
+                    width: 80%;
+                    height: 0%;
+                    border: .1vw solid var(--secondary-color);
+                    border-radius: 10vw;
+                }
+
+                &>div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2.5vw;
+
+                    &>h1 {
+                        font-size: var(--normal-1);
+                        -webkit-text-stroke: .1vw black;
+                        color: white;
+                    }
+
+                    &>p {
+                        font-size: var(--normal-2);
+                        font-weight: var(--poppins-regular);
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        div.ambitions {
+            display: flex;
+            flex-direction: column;
+            gap: 5vw;
+
+            // Sinon affichage en colonne classique sur téléphone, en mettant un gap avec le bouton
+            @media (max-width: 720px) {
+                & {
+                    gap: 10vw;
+                }
+            }
+
+            div.horizontal-scroll {
+                display: flex;
+                width: 400vw;
+
+                // Changer l'affichage du 'horizontal scroll' quand sur téléphone
+                @media (max-width: 720px) {
+                    & {
+                        width: 100vw;
+                        flex-direction: column !important;
+                        gap: 10vw;
+                    }
+                }
+
+                article {
+                    width: 100vw;
+
+                    display: flex;
+                    gap: 5vw;
+
+                    padding: 0 15vw;
+
+                    // Changer l'affichage du 'horizontal scroll' quand sur téléphone
+                    @media (max-width: 720px) {
+                        & {
+                            flex-direction: column !important;
+                        }
+                    }
+
+                    &>h1 {
+                        font-size: var(--normal-1);
+                    }
+
+                    &>p,
+                    &>ul>li {
+                        font-size: var(--normal-2);
+
+                        &>span {
+                            font-weight: var(--poppins-bold);
+                        }
+
+                        &>a {
+                            color: var(--accent-color);
+                            transition: font-weight .1s ease-in;
+                            font-weight: var(--poppins-semibold);
+                        }
+                    }
+
+                    &>ul {
+                        list-style-type: none;
+
+                        &>li {
+                            margin-top: 1vw;
+                        }
+                    }
+                }
+            }
+
+            div.projects-button {
+                width: 100%;
+                padding: 0 10vw;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3vw;
+
+                &>hr {
+                    display: none;
+                }
+
+                &>button {
+                    padding: 1vw 2vw;
+                    border: none;
+                    border-radius: .5vw;
+
+                    background-color: white;
+                    box-shadow: var(--repos-effect);
+
+                    font-size: var(--normal-2);
+                    font-weight: var(--poppins-semibold);
+
+                    transition: transform .3s;
+
+                    &:hover {
+                        background-color: var(--accent-color);
+                        box-shadow: var(--cliqued-effect);
+                        transform: translate(-1px, 1px);
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes moveSlideShow {
+        to {
+            transform: translateX(-50%);
+        }
+    }
+}

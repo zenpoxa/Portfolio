@@ -3,7 +3,8 @@
     &>header {
         width: 100vw;
 
-        margin: 10vw 0;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
 
         display: flex;
         justify-content: center;
@@ -34,7 +35,7 @@
                     &>div {
                         position: relative;
 
-                        &>svg {
+                        &>img {
                             width: 30vw;
                             animation: full-turn infinite linear 15s, shining infinite cubic-bezier(0, -0.15, .49, 1.32) 3s;
                         }
@@ -43,6 +44,7 @@
                             position: absolute;
                             top: 50%;
                             left: 50%;
+                            text-align: center;
                             transform: translate(-50%, -50%);
 
                             width: 28vw;
@@ -62,7 +64,6 @@
                                 width: 100%;
 
                                 border-radius: 1vw;
-                                border: .25vw black solid;
                             }
                         }
                     }
@@ -77,14 +78,12 @@
 
                         &>h1 {
                             font-size: var(--normal-1);
-                            text-shadow: var(--text-shadow) black;
                         }
 
                         &>p {
                             font-size: var(--small-1);
 
                             &>span {
-                                text-shadow: var(--text-shadow) rgba(black, .3);
                                 font-weight: var(--poppins-bold);
                             }
                         }
@@ -97,19 +96,14 @@
                 &::after {
                     font-size: 4vw;
                     color: var(--secondary-color);
-                    text-shadow: var(--text-shadow) black;
-
-                    transition: transform .3s, text-shadow .2s;
                 }
 
                 &:hover {
                     &::after {
                         color: var(--accent-color);
                         text-shadow: none;
-                        transform: translate(-1px, 1px)
+                        transform: translate(-1px, 1px);
                     }
-
-                    ;
                 }
             }
         }
@@ -120,7 +114,7 @@
         flex-direction: column;
         gap: 2.5vw;
 
-        margin-bottom: 10vw;
+        margin-bottom: 4vw;
 
         &>a {
             width: 85%;
@@ -131,7 +125,7 @@
             color: var(--primary-color);
             -webkit-text-stroke: .1vw black;
 
-            background-color: var(--secondary-color);
+            background-color: white;
 
             border: var(--accent-color) .25vw solid;
             border-left: none;
@@ -168,17 +162,15 @@
         justify-content: space-between;
         align-items: center;
 
-        margin-left: 5vw;
-        margin-bottom: 10vw;
+        margin: 0 0 5vw 5vw;
 
         &>h1 {
             font-size: var(--big-3);
-            font-style: italic;
             font-weight: var(--poppins-bold);
+            color: white;
+            -webkit-text-stroke: .1vw black;
 
             flex-grow: 0;
-
-            text-shadow: var(--text-shadow) rgba(black, .5);
         }
 
         &>img {
@@ -190,19 +182,10 @@
             flex-basis: 40%;
 
             height: 0;
-            border: var(--secondary-color) .5vw solid;
+            border: white .5vw solid;
             border-radius: .5vw 0 0 .5vw;
         }
     }
-
-    &>div.transition-liste {
-        margin-top: 10vw;
-
-        &>h1 {
-            font-style: normal;
-        }
-    }
-
 
     @keyframes full-turn {
         to {
@@ -212,15 +195,15 @@
 
     @keyframes shining {
         from {
-            filter: drop-shadow(0 0 .5vw rgba(yellow, .8));
+            filter: drop-shadow(0 0 .5vw rgba(#F5C07B, .8));
         }
 
         50% {
-            filter: drop-shadow(0 0 2.5vw rgba(yellow, 1));
+            filter: drop-shadow(0 0 2.5vw rgba(#F5C07B, 1));
         }
 
         to {
-            filter: drop-shadow(0 0 .5vw rgba(yellow, .8));
+            filter: drop-shadow(0 0 .5vw rgba(#F5C07B, .8));
         }
     }
 }

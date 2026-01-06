@@ -1,4 +1,4 @@
-const tableau_pages = ["fig.html", "projet-bdd.html", "alternance.html", "projet-interview.html"];
+const tableau_pages = ["alternance.html", "fig.html", "projet-bdd.html", "projet-interview.html"];
 var currentPage = window.location.href.split('/'); currentPage = (currentPage[currentPage.length - 1]);
 var currentIdx = tableau_pages.indexOf(currentPage);
 
