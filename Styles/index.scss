@@ -185,11 +185,10 @@
 
                 &>button {
                     padding: 1vw 2vw;
-                    border: none;
+                    border: 1px black solid;
                     border-radius: .5vw;
 
                     background-color: white;
-                    box-shadow: var(--repos-effect);
 
                     font-size: var(--normal-2);
                     font-weight: var(--poppins-semibold);

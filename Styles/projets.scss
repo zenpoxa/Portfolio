@@ -37,7 +37,7 @@
 
                         &>img {
                             width: 30vw;
-                            animation: full-turn infinite linear 15s, shining infinite cubic-bezier(0, -0.15, .49, 1.32) 3s;
+                            animation: full-turn infinite linear 15s;
                         }
 
                         &>a {

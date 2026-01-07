@@ -114,7 +114,7 @@
 
                 &>#envoyer {
                     background-color: white;
-                    border: none;
+                    border: 1px black solid;
 
                     @media (max-width: 720px) {
                         & {
@@ -123,8 +123,6 @@
                     }
 
                     flex-grow: 0;
-
-                    box-shadow: var(--repos-effect);
 
                     padding: 1vw;
 
