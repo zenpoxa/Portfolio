@@ -9,36 +9,13 @@
 
     &>div.formulaire-mail {
         width: 100vw;
+        
+        padding: 10vw 20vw;
 
         @media (max-width: 720px) {
             & {
+                padding: 20vw 10vw 0vw;
                 flex-grow: 1;
-            }
-        }
-
-        margin: 10vw 0;
-        padding: 0 10vw;
-
-        &>div {
-            display: flex;
-            align-items: center;
-            gap: 2vw;
-
-            &>h1 {
-                font-size: var(--normal-1);
-
-                @media (max-width: 720px) {
-                    & {
-                        font-size: var(--big-2);
-                    }
-                }
-
-                font-weight: var(--poppins-semibold);
-                text-shadow: var(--text-shadow) black;
-            }
-
-            &>img {
-                width: 3vw;
             }
         }
 
@@ -51,6 +28,7 @@
             &>input,
             &>textarea,
             &>div>input {
+                border: 1px black solid;
                 border-radius: .5vw;
 
                 font-size: var(--small-1);
@@ -110,6 +88,13 @@
                     font-weight: var(--poppins-bold);
                     color: white;
                     -webkit-text-stroke: .05vw black;
+
+                    @media (max-width: 720px) {
+                        & {
+                            color: black;
+                            -webkit-text-stroke: none;
+                        }
+                    }
                 }
 
                 &>#envoyer {
@@ -146,18 +131,18 @@
     }
 
     &>div.gardons-contact {
-        @media (max-width: 720px) {
-            & {
-                display: none;
-            }
-        }
-
         width: 100%;
 
         display: flex;
         flex-direction: column;
         gap: 10vw;
         padding: 0 10vw;
+
+        @media (max-width: 720px) {
+            & {
+                display: none;
+            }
+        }
 
         &>div.gradation {
             display: flex;

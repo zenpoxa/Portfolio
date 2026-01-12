@@ -182,18 +182,12 @@
 
             &>p {
                 font-size: var(--normal-2);
-                font-weight: var(--poppins-semibold);
 
                 &>span {
-                    font-weight: var(--poppins-bold);
+                    font-weight: var(--poppins-semibold);
 
                     &.i {
                         font-style: italic;
-                    }
-
-                    &.bold {
-                        color: var(--secondary-color);
-                        font-weight: var(--poppins-bold);
                     }
                 }
 
@@ -203,7 +197,7 @@
                     transition: font-weight .1s;
 
                     &:hover {
-                        font-weight: var(--poppins-extrabold);
+                        font-weight: var(--poppins-semibold);
                     }
                 }
             }
@@ -211,27 +205,28 @@
 
         &>div.equipe {
             display: flex;
+            flex-wrap: wrap;
+            align-items: center;
             justify-content: space-around;
 
             &>div.card {
-                padding: 24px 16px 20px;
+                padding: 1vw 2vw 2vw;
                 display: flex;
                 gap: 1vw;
                 align-items: center;
 
                 &>div.card-name {
-                    font-size: 1.2rem;
-                    font-weight: 600;
+                    font-size: var(--normal-2);
+                    font-weight: var(--poppins-semibold);
                     color: #333;
                 }
 
                 &>img {
-                    width: 120px;
-                    height: 120px;
+                    width: 5vw;
+                    height: 5vw;
                     border-radius: 50%;
                     object-fit: contain;
                     border: 1px solid black;
-                    margin-bottom: 14px;
                 }
             }
         }
@@ -317,7 +312,6 @@
                 
                 &>p {
                     font-size: var(--normal-2);
-                    font-weight: var(--poppins-semibold);
                 }
             }
         }
@@ -415,10 +409,9 @@
 
             &>p {
                 font-size: var(--normal-2);
-                font-weight: var(--poppins-semibold);
 
                 &>span {
-                    font-weight: var(--poppins-bold);
+                    font-weight: var(--poppins-semibold);
                 }
             }
         }
